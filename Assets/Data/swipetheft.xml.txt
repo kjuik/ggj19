@@ -10,8 +10,7 @@
             <they>I'm Mokoto</they>
             <you>I know</you>
             <question>
-                <text></text>
-                <correctAnswer>Cats?</correctAnswer>
+                <text>Cats?</text>
                 <answerRight>YES</answerRight>
                 <answerWrong>No</answerWrong>
                 <answerWrong>DOGS</answerWrong>
@@ -21,8 +20,7 @@
             <you>Sure agree, friend</you>
             <they>But lets be sure</they>
             <question>
-                <text></text>
-                <correctAnswer>Cats?</correctAnswer>
+                <text>Cats?</text>
                 <answerRight>YES</answerRight>
                 <answerWrong>No</answerWrong>
                 <answerWrong>DOGS</answerWrong>
@@ -44,8 +42,7 @@
             <they>I'm Mokoto</they>
             <you>I know</you>
             <question>
-                <text></text>
-                <correctAnswer>Cats?</correctAnswer>
+                <text>Cats?</text>
                 <answerRight>YES</answerRight>
                 <answerWrong>No</answerWrong>
                 <answerWrong>DOGS</answerWrong>
@@ -55,8 +52,7 @@
             <you>Sure agree, friend</you>
             <they>But lets be sure</they>
             <question>
-                <text></text>
-                <correctAnswer>Cats?</correctAnswer>
+                <text>Cats?</text>
                 <answerRight>YES</answerRight>
                 <answerWrong>No</answerWrong>
                 <answerWrong>DOGS</answerWrong>

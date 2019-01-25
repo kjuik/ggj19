@@ -1,0 +1,70 @@
+<people>
+    <person>
+        <id>anime</id>
+        <name>Mokoto</name>
+        <bio>Just your regular anime fan</bio>
+        <furnitureComment>What a nice limited edition Naruto poster</furnitureComment>
+        <dialogue>
+            <they>Hello</they>
+            <you>Hello!</you>
+            <they>I'm Mokoto</they>
+            <you>I know</you>
+            <question>
+                <text></text>
+                <correctAnswer>Cats?</correctAnswer>
+                <answerRight>YES</answerRight>
+                <answerWrong>No</answerWrong>
+                <answerWrong>DOGS</answerWrong>
+                <failure>You are a monster</failure>
+            </question>
+            <they>Yeah, cats are awesome</they>
+            <you>Sure agree, friend</you>
+            <they>But lets be sure</they>
+            <question>
+                <text></text>
+                <correctAnswer>Cats?</correctAnswer>
+                <answerRight>YES</answerRight>
+                <answerWrong>No</answerWrong>
+                <answerWrong>DOGS</answerWrong>
+                <failure>You are a monster</failure>
+            </question>
+            <they>YOU WIN MY HEART</they>
+            <they>Lets go to my place</they>
+            <you>Sure, I guess</you>
+        </dialogue>
+    </person>
+    <person>
+        <id>student</id>
+        <name>Totally not Mokoto</name>
+        <bio>Not into anime at all</bio>
+        <furnitureComment>What a nice limited edition dog poster</furnitureComment>
+        <dialogue>
+            <they>Hello</they>
+            <you>Hello!</you>
+            <they>I'm Mokoto</they>
+            <you>I know</you>
+            <question>
+                <text></text>
+                <correctAnswer>Cats?</correctAnswer>
+                <answerRight>YES</answerRight>
+                <answerWrong>No</answerWrong>
+                <answerWrong>DOGS</answerWrong>
+                <failure>You are a monster</failure>
+            </question>
+            <they>Yeah, cats are awesome</they>
+            <you>Sure agree, friend</you>
+            <they>But lets be sure</they>
+            <question>
+                <text></text>
+                <correctAnswer>Cats?</correctAnswer>
+                <answerRight>YES</answerRight>
+                <answerWrong>No</answerWrong>
+                <answerWrong>DOGS</answerWrong>
+                <failure>You are a monster</failure>
+            </question>
+            <they>YOU WIN MY HEART</they>
+            <they>Lets go to my place</they>
+            <you>Sure, I guess</you>
+        </dialogue>
+    </person>
+</people>

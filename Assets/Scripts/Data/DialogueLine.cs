@@ -10,19 +10,21 @@ namespace Data
 
         public Speaker Speaker;
         public string Text;
+        public string Expression;
 
-        public DialogueLine(Speaker speaker, string text)
+        DialogueLine(Speaker speaker, string text, string expression)
         {
             Speaker = speaker;
             Text = text;
+            Expression = expression;
         }
 
-        public static DialogueLine Parse(XElement element)
-        {
+        public static DialogueLine Parse(XElement element) {
             return new DialogueLine(
                 element.Name.LocalName == "they" ? Speaker.They : Speaker.You,
-                element.Value
-                );
+                element.Value,
+                element.HasAttributes ? element.FirstAttribute.Value : "default"
+            );
         }
     }
 }

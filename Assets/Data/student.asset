@@ -13,5 +13,19 @@ MonoBehaviour:
   m_Name: student
   m_EditorClassIdentifier: 
   Photo: {fileID: 21300000, guid: 744d412b3b54e064c84c80d39eee2571, type: 3}
-  DatingCharacter: {fileID: 21300000, guid: a05907765acd74387a12da36b71bd755, type: 3}
+  Expressions:
+  - image: {fileID: 21300000, guid: a05907765acd74387a12da36b71bd755, type: 3}
+    key: default
+  - image: {fileID: 21300000, guid: 46cab56ad28604a3fadccabaa9c35bce, type: 3}
+    key: awkward
+  - image: {fileID: 21300000, guid: ecf17c11f972549ef8c74532417c35a9, type: 3}
+    key: pout
+  - image: {fileID: 21300000, guid: 83587ce9f48e14e70a858bae85c004ee, type: 3}
+    key: cheeky
+  - image: {fileID: 21300000, guid: abff020bde64942059b2b8de21771dda, type: 3}
+    key: unhappy
+  - image: {fileID: 21300000, guid: 9c4100c87791e4c61bc654eecdd4dfed, type: 3}
+    key: smile
+  - image: {fileID: 21300000, guid: 250d5119eddc0463298ecd1ac3d598fc, type: 3}
+    key: laugh
   NameTextColor: {r: 0, g: 0.038665097, b: 0.8584906, a: 1}

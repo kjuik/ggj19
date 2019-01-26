@@ -1,13 +1,13 @@
 <people>
     <person>
         <id>anime</id>
-        <name>Mokoto</name>
-        <bio>Just your regular anime fan</bio>
+        <name>Kiki</name>
+        <bio>Heyyy!!! KiKi here, looking for a cute Otaku boy *.* No weirdos or cosplay requests pls... and YES, I know Death Note. Get a taste. Featured at AnimeCon 19!! ^__^</bio>
         <furnitureComment>What a nice limited edition Naruto poster</furnitureComment>
         <dialogue>
             <they>Hello</they>
             <you>Hello!</you>
-            <they>I'm Mokoto</they>
+            <they>I'm Kiki</they>
             <you>I know</you>
             <question>
                 <text>Cats?</text>
@@ -33,13 +33,13 @@
     </person>
     <person>
         <id>student</id>
-        <name>Totally not Mokoto</name>
-        <bio>Not into anime at all</bio>
+        <name>Karen</name>
+        <bio>Engineering student at TU. Coffee addict, book nerd, grammar nazi. Awkward as fuck - hate clubs and small talk. NOT looking for hookups.</bio>
         <furnitureComment>What a nice limited edition dog poster</furnitureComment>
         <dialogue>
             <they>Hello</they>
             <you>Hello!</you>
-            <they>I'm Mokoto</they>
+            <they>I'm Karen</they>
             <you>I know</you>
             <question>
                 <text>Cats?</text>
@@ -63,4 +63,68 @@
             <you>Sure, I guess</you>
         </dialogue>
     </person>
+	<person>
+        <id>satanist</id>
+        <name>Lucious</name>
+        <bio>Let me be your dungeon master ;-)</bio>
+        <furnitureComment>What a nice limited edition dog poster</furnitureComment>
+        <dialogue>
+            <they>Hello</they>
+            <you>Hello!</you>
+            <they>I'm Lucious</they>
+            <you>I know</you>
+            <question>
+                <text>Cats?</text>
+                <answerRight>YES</answerRight>
+                <answerWrong>No</answerWrong>
+                <answerWrong>DOGS</answerWrong>
+                <failure>You are a monster</failure>
+            </question>
+            <they>Yeah, cats are awesome</they>
+            <you>Sure agree, friend</you>
+            <they>But lets be sure</they>
+            <question>
+                <text>Cats?</text>
+                <answerRight>YES</answerRight>
+                <answerWrong>No</answerWrong>
+                <answerWrong>DOGS</answerWrong>
+                <failure>You are a monster</failure>
+            </question>
+            <they>YOU WIN MY HEART</they>
+            <they>Lets go to my place</they>
+            <you>Sure, I guess</you>
+        </dialogue>
+    </person>
+	<person>
+        <id>dj</id>
+        <name>Maze</name>
+        <bio>Check out my soundcloud at DJ MAZE - set every Friday and Saturday at The VOID</bio>
+        <furnitureComment>What a nice limited edition dog poster</furnitureComment>
+        <dialogue>
+            <they>Hello</they>
+            <you>Hello!</you>
+            <they>I'm Maze</they>
+            <you>I know</you>
+            <question>
+                <text>Cats?</text>
+                <answerRight>YES</answerRight>
+                <answerWrong>No</answerWrong>
+                <answerWrong>DOGS</answerWrong>
+                <failure>You are a monster</failure>
+            </question>
+            <they>Yeah, cats are awesome</they>
+            <you>Sure agree, friend</you>
+            <they>But lets be sure</they>
+            <question>
+                <text>Cats?</text>
+                <answerRight>YES</answerRight>
+                <answerWrong>No</answerWrong>
+                <answerWrong>DOGS</answerWrong>
+                <failure>You are a monster</failure>
+            </question>
+            <they>YOU WIN MY HEART</they>
+            <they>Lets go to my place</they>
+            <you>Sure, I guess</you>
+        </dialogue>
+    </person>	 
 </people>

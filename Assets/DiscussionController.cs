@@ -60,6 +60,7 @@ public class DiscussionController : MonoBehaviour {
     void UpdateLineText(DialogueLine dialogueLine) {
         nameText.text = dialogueLine.Speaker == Speaker.They ? ChosenPerson.Name : "You";
         dialogueText.text = dialogueLine.Text;
+        dialogueText.GetComponent<TextScrolling>().Scroll();
     }
 
     void ShowQuestion(DialogueQuestion dialogueQuestion) {

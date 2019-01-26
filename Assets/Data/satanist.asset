@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: satanist
   m_EditorClassIdentifier: 
   Photo: {fileID: 21300000, guid: b4c6b7280e107f845a3bbd8b0908b547, type: 3}
-  DatingCharacter: {fileID: 0}
+  DatingCharacter: {fileID: 21300000, guid: cd2d1ab9202304c14b490efd7953cea3, type: 3}

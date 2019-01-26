@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: student
   m_EditorClassIdentifier: 
   Photo: {fileID: 21300000, guid: 744d412b3b54e064c84c80d39eee2571, type: 3}
-  DatingCharacter: {fileID: 0}
+  DatingCharacter: {fileID: 21300000, guid: 376d406ae753f48e0993859438d7ba95, type: 3}

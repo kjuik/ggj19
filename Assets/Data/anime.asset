@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: anime
   m_EditorClassIdentifier: 
   Photo: {fileID: 21300000, guid: 8e53791b16c0f274daff24027036805f, type: 3}
-  DatingCharacter: {fileID: 0}
+  DatingCharacter: {fileID: 21300000, guid: 8773688d642364daeba4f86665298cf9, type: 3}

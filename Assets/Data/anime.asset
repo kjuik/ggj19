@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fb10b040b54dfab7a079b7b4e2391b, type: 3}
   m_Name: anime
   m_EditorClassIdentifier: 
-  Photo: {fileID: 21300000, guid: 8e53791b16c0f274daff24027036805f, type: 3}
+  Photo: {fileID: 21300000, guid: a90953b3b56994fc6be5d02416314f41, type: 3}
   Expressions:
   - image: {fileID: 21300000, guid: 3f08b876e1caa4f14aa37fbca5439cf7, type: 3}
     key: default

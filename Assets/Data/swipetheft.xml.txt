@@ -74,41 +74,41 @@
         <furnitureComment>A coffee maker 3000? Damn. I could never afford to drop that kind of money for my morning latte.</furnitureComment>
         <dialogue>
 			<you>...so, you look quite different from your pic on simder...</you>
-			<they>(laughs) Yeah, I know. Actually my friends made me sign up and take that picture. Not even sure why I still have that account.</they>
-            <you>Yet here we are! Is this your first simder date?</you>
-            <they>Yeah. To be honest, I’m just here cause some frat boys are throwing a party at my dorm and I’m not feeling like getting puked on.</they>
+			<they expression="laugh">(laughs) Yeah, I know. Actually my friends made me sign up and take that picture. Not even sure why I still have that account.</they>
+            <you expression="laugh">Yet here we are! Is this your first simder date?</you>
+            <they expression="awkward">Yeah. To be honest, I’m just here cause some frat boys are throwing a party at my dorm and I’m not feeling like getting puked on.</they>
             <you>Glad to be your distraction. I’ll try my best to entertain.</you>
-			<they>(laughs) Sorry, it’s not because of you. You actually seem... ok.</they>
-			<they>(She drops her gaze in her coffee. Awkward silence fills the room)</they>
+			<they expression="laugh">(laughs) Sorry, it’s not because of you. You actually seem... ok.</they>
+			<they expression="awkward">(She drops her gaze in her coffee. Awkward silence fills the room)</they>
             <question>
                 <they>Guess I should ask questions as well. How about you? Are you a party animal?</they>
                 <answerRight>
                     <you>Not at all. Loud music gives me a headache and I can't hear myself think, never mind hear anyone else talk to me.</you>
-                    <they>I feel the same way.</they>
+                    <they expression="smile">I feel the same way.</they>
                 </answerRight>
                 <answerWrong>
-                    <you>I fancy social gatherings and sparkling wine, but don’t need it every week.</you>
-                    <they>Sorry, I shouldn’t waste your time then. I think I’ll just stay at a friend's place tonight.</they>
+                    <you expression="pout">I fancy social gatherings and sparkling wine, but don’t need it every week.</you>
+                    <they expression="unhappy">Sorry, I shouldn’t waste your time then. I think I’ll just stay at a friend's place tonight.</they>
                 </answerWrong>
                 <answerWrong>
-                    <you>Hell yeah, I’m a weekend warrior!</you>
-                    <they>Sorry, not the type at all. Think I’ll just stay at a friend's place tonight.</they>
+                    <you expression="pout">Hell yeah, I’m a weekend warrior!</you>
+                    <they expression="unhappy">Sorry, not the type at all. Think I’ll just stay at a friend's place tonight.</they>
                 </answerWrong>
            </question>
-            <they>These guys blow their brains out with alcohol and whatever pills. Hope they don’t throw the coffee maker out the window like last time.</they>
+            <they expression="cheeky">These guys blow their brains out with alcohol and whatever pills. Hope they don’t throw the coffee maker out the window like last time.</they>
 			<they>Dorm administration got a fancy new one for us and it’s the only thing keeping me alive in that hellhole. I spend all my money on it.</they>
 			<they>Somehow people have gotten into their heads that partying is the pinnacle of entertainment. I’d rather get somewhere in life.</they> 
             <you>Totally understand. What are your plans?</you>
-            <they>Getting a PhD and doing research for the good of humanity.</they>
+            <they expression="smile">Getting a PhD and doing research for the good of humanity.</they>
             <question>
-                <they>You?</they>
+                <they expression="smile">You?</they>
                 <answerRight>
-                    <you>I wanna get into med school. My parents are doctors as well.</you>
-                    <they>I see, having that helper syndrome as well. You should be studying though!</they>
+                    <you expression="smile">I wanna get into med school. My parents are doctors as well.</you>
+                    <they expression="laugh">I see, having that helper syndrome as well. You should be studying though!</they>
                 </answerRight>
                 <answerWrong>
-                    <you>One day I’ll buy a food truck and travel around Asia.</you>
-                    <they>Sorry, not into that millennial stuff. Hey, I think I'm actually gonna head out now.</they>
+                    <you expression="cheeky">One day I’ll buy a food truck and travel around Asia.</you>
+                    <they expression="unhappy">Sorry, not into that millennial stuff. Hey, I think I'm actually gonna head out now.</they>
                 </answerWrong>
                 <answerWrong>
                     <you>I’m saving up to quit my job and be an indie game developer.</you>
@@ -117,17 +117,17 @@
                 </answerWrong>
             </question>
 			<question>
-				<they>What are you looking for on simder?</they>
+				<they expression="smile">What are you looking for on simder?</they>
                 <answerRight>
-                    <you>A little break, a nice conversation and a good coffee.</you>
-                    <they>To be honest, the coffee here is shit. Let’s go back to my place.</they>
+                    <you expression="smile">A little break, a nice conversation and a good coffee.</you>
+                    <they expression="smile">To be honest, the coffee here is shit. Let’s go back to my place.</they>
                 </answerRight>
                 <answerWrong>
                     <you>I read this thing in Cosmopolitan and really wanna try it!</you>
-                    <they>Ugh, that's weird. Sorry, but I think I'll just stay at a friends place tonight.</they>
+                    <they expression="pout">Ugh, that's weird. Sorry, but I think I'll just stay at a friends place tonight.</they>
                 </answerWrong>
                 <answerWrong>
-                    <you>I’m looking for a flat.</you>
+                    <you expression="smile">I’m looking for a flat.</you>
                     <they>Sorry, can't help with that. I think I'm actually heading out now. Thanks for the coffee!</they>
                 </answerWrong>
 			</question>
@@ -140,65 +140,65 @@
         <furnitureComment>That cross in the back... is this guy for real?</furnitureComment>
         <dialogue>
             <you>...so, if I may ask: is Lucious your real name?</you>
-			<they>It's my dungeon name.</they>
-			<you>As in, like, Dungeons and Dragons? My friends tried to show it to me once.</you>
-			<they>(he smirks.)</they>
-			<they>That as well. Let's say I'm an adventurer, like faith and nature.</they>
+			<they expression="smile">It's my dungeon name.</they>
+			<you expression="smile">As in, like, Dungeons and Dragons? My friends tried to show it to me once.</you>
+			<they expression="laugh">(he smirks.)</they>
+			<they expression="smile">That as well. Let's say I'm an adventurer, like faith and nature.</they>
             <question>
-                <they>Based on that, can you guess what DnD class I'm mostly playing when I'm not DM?</they>
+                <they expression="cheeky">Based on that, can you guess what DnD class I'm mostly playing when I'm not DM?</they>
                 <answerWrong>
-                    <you>Monk.</you>
-                    <they>I'd never play that! What an insult. You forgot nature! Sorry, but I should leave now.</they>
+                    <you expression="awkward">Monk.</you>
+                    <they expression="unhappy">I'd never play that! What an insult. You forgot nature! Sorry, but I should leave now.</they>
                 </answerWrong>
                 <answerWrong>
-                    <you>Paladin.</you>
-                    <they>I'd never play that! What an insult. You forgot nature! Sorry, but I should leave now.</they>
+                    <you expression="awkward">Paladin.</you>
+                    <they expression="unhappy">I'd never play that! What an insult. You forgot nature! Sorry, but I should leave now.</they>
                 </answerWrong>
 				<answerRight>
-                    <you>Druid.</you>
-                    <they>You're actually right!</they>
+                    <you expression="smile">Druid.</you>
+                    <they expression="laugh">You're actually right!</they>
                 </answerRight>
             </question>
-			<they>I like messing around with cool rituals and adopting different animal forms.</they>
+			<they expression="smile">I like messing around with cool rituals and adopting different animal forms.</they>
 			<question>
-                <they>If you could, would you rather transform into a cat or a dog?</they>
+                <they expression="cheeky">If you could, would you rather transform into a cat or a dog?</they>
 				<answerRight>
-                    <you>A cat.</you>
-                    <they>Haha, me too! I actually have a cat myself, living underground with me. I love that little thing to death.</they>
+                    <you expression="smile">A cat.</you>
+                    <they expression="laugh">Haha, me too! I actually have a cat myself, living underground with me. I love that little thing to death.</they>
                 </answerRight>
                 <answerWrong>
-                    <you>A dog.</you>
-                    <they>A dog? Unfortunately I don't think we are working out if don't love cats the most... we should stop wasting our time.</they>
+                    <you expression="pout">A dog.</you>
+                    <they expression="pout">A dog? Unfortunately I don't think we are working out if don't love cats the most... we should stop wasting our time.</they>
                 </answerWrong>
                 <answerWrong>
-                    <you>I don't like animals and I don't want to be one.</you>
-                    <they>What's wrong with you? Sorry, I can't date uncompassionate people. It's against the rules of the coven.</they>
+                    <you expression="pout">I don't like animals and I don't want to be one.</you>
+                    <they expression="unhappy">What's wrong with you? Sorry, I can't date uncompassionate people. It's against the rules of the coven.</they>
                 </answerWrong>
             </question>
-            <you>Underground?</you>
-			<they>It's this abandoned place giving me peace and quiet. I really enjoy that.</they>
-			<you>You also look like you got a gym in there.</you>
-			<they>(he pats his stomach.) I just eat low-carb!</they>
+            <you expression="smile">Underground?</you>
+			<they expression="cheeky">It's this abandoned place giving me peace and quiet. I really enjoy that.</they>
+			<you expression="smile">You also look like you got a gym in there.</you>
+			<they expression="laugh">(he pats his stomach.) I just eat low-carb!</they>
 			<they>But sometimes people pass by and call it urban exploring.</they>
 			<you>How do you deal with them?</you>
-			<they>I just tell them to go away...</they>
+			<they expression="awkward">I just tell them to go away...</they>
 			<they>(his eyes widen.)</they>
-			<they>Or simply invite them underground! HAHAHA!</they>
-			<you>I...</you>
-			<they>Sorry, I got a bit excited. I just like getting to know new people in person, it's easier than simder.</they>
+			<they expression="laugh">Or simply invite them underground! HAHAHA!</they>
+			<you expression="smile">I...</you>
+			<they expression="cheeky">Sorry, I got a bit excited. I just like getting to know new people in person, it's easier than simder.</they>
 			<question>
                 <they>Do you consider yourself open-minded like that?</they>
                 <answerWrong>
                     <you>Well yeah, until you scared me.</you>
-                    <they>I'm sorry, I didn't want to leave a bad impression. I actually feel a bit ashamed now, so I guess I'll just leave.</they>
+                    <they expression="awkward">I'm sorry, I didn't want to leave a bad impression. I actually feel a bit ashamed now, so I guess I'll just leave.</they>
                 </answerWrong>
 					<answerRight>
-                    <you>I do!</you>
-                    <they>I thought so. Let me invite you to my place for a roleplaying session tonight then! We're starting at 7.</they>
+                    <you expression="smile">I do!</you>
+                    <they expression="smile">I thought so. Let me invite you to my place for a roleplaying session tonight then! We're starting at 7.</they>
 				</answerRight>
                 <answerWrong>
-                    <you>Of course, otherwise I wouldn't have matched you.</you>
-                    <they>What does that mean? You think I'm some kind of freak? That actually hurt. I think I'll just leave now.</they>
+                    <you expression="pout">Of course, otherwise I wouldn't have matched you.</you>
+                    <they expression="unhappy">What does that mean? You think I'm some kind of freak? That actually hurt. I think I'll just leave now.</they>
                 </answerWrong>
             </question>
         </dialogue>
@@ -210,42 +210,42 @@
         <furnitureComment>Wow! This guy has a Native Instruments Traktor S8!</furnitureComment>
         <dialogue>
 			<you>...by the way, I really like your jacket. It's so shiny and sparkly.</you>
-			<they>(smiles) Thanks! I like your style, too.</they>
+			<they expression="smile">(smiles) Thanks! I like your style, too.</they>
             <question>
-                <they>So, I'm wondering - what's your favorite club in Berlin?</they>
+                <they expression="smile">So, I'm wondering - what's your favorite club in Berlin?</they>
                 <answerWrong>
-                    <you>Berghain. It's always a wet and wild ride.</you>
-                    <they>So pretentious. They let you in? Sorry, I really don't like shutting people out. But if you're that kind of person...</they>
-					<they>I gotta shut you out. Maze out!</they>
+                    <you expression="pout">Berghain. It's always a wet and wild ride.</you>
+                    <they expression="unhappy">So pretentious. They let you in? Sorry, I really don't like shutting people out. But if you're that kind of person...</they>
+					<they expression="pout">I gotta shut you out. Maze out!</they>
                 </answerWrong>
                 <answerWrong>
-                    <you>Matrix. I think they provide something for every taste.</you>
-                    <they>Well yeah, but what a tourist trap! It's like when people say they listen to "everything"...</they>
-					<they>but they only mean the radio. Maze out!</they>
+                    <you expression="pout">Matrix. I think they provide something for every taste.</you>
+                    <they expression="unhappy">Well yeah, but what a tourist trap! It's like when people say they listen to "everything"...</they>
+					<they expression="pout">but they only mean the radio. Maze out!</they>
                 </answerWrong>
 				<answerRight>
-                    <you>Wondrous. It's a musical wonderland of magical fantasy.</you>
-                    <they>Are you for real? I'm playing sets there almost every week!</they>
+                    <you expression="smile">Wondrous. It's a musical wonderland of magical fantasy.</you>
+                    <they expression="laugh">Are you for real? I'm playing sets there almost every week!</they>
                 </answerRight>
             </question>
             <question>
-                <they>Is that why you matched me? It's actually in my simder bio!</they>
+                <they expression="laugh">Is that why you matched me? It's actually in my simder bio!</they>
                 <answerRight>
-                    <you>Yeah, but I don't care so much about it. You're just kinda cute.</you>
+                    <you expression="smile">Yeah, but I don't care so much about it. You're just kinda cute.</you>
                     <they>Aw, how sweet. You're making me feel fabulous.</they>
                 </answerRight>
                 <answerWrong>
-                    <you>Yeah, I would make a great +1 for guest lists, red carpets and stuff like that!</you>
-                    <they>Boo! I don't like people who invite themselves to fame. Maze out!</they>
+                    <you expression="pout">Yeah, I would make a great +1 for guest lists, red carpets and stuff like that!</you>
+                    <they expression="unhappy">Boo! I don't like people who invite themselves to fame. Maze out!</they>
                 </answerWrong>
                 <answerWrong>
-                    <you>I didn't know, really! I never read those.</you>
-                    <they>So you only look at the pics? How superficial. Sorry, I'm looking for meaningful connections here.</they>
-					<they>Maze out!</they>
+                    <you expression="pout">I didn't know, really! I never read those.</you>
+                    <they expression="unhappy">So you only look at the pics? How superficial. Sorry, I'm looking for meaningful connections here.</they>
+					<they expression="unhappy">Maze out!</they>
                 </answerWrong>
             </question>
-			<you>That's my job here! So how does life as a nightowl work? I'd love to see you work on a set. I guess this is one of your rare appearances in daylight.</you>
-			<they>(laughs) Well, I live right above Wondrous so yeah, if I don't have other gigs I usually stay in that area and work at home all day long. Love the club crowds at night.</they>
+			<you expression="smile">That's my job here! So how does life as a nightowl work? I'd love to see you work on a set. I guess this is one of your rare appearances in daylight.</you>
+			<they expression="laugh">(laughs) Well, I live right above Wondrous so yeah, if I don't have other gigs I usually stay in that area and work at home all day long. Love the club crowds at night.</they>
 			<you>Here's a question. If given a choice to play a song you know will make the crowd go crazy, or play a song you like that will get a lukewarm reaction, which do you play?</you>
 			<they>Club guests always go first. If they're having a good time, I feel all fuzzy inside.</they>
 			<question>
@@ -253,20 +253,20 @@
                 <answerWrong>
                     <you>I'm not really the creative type. I guess that's why I find these things fascinating. I'm all about family and friends.</you>
                     <they>That's cool!</they>
-					<they>(he checks his watch.)</they>
-					<they>Wow, it's quite late already. I gotta go work as I have a gig tonight. You should come to my gig!</they>
+					<they expression="awkward">(he checks his watch.)</they>
+					<they expression="awkward">Wow, it's quite late already. I gotta go work as I have a gig tonight. You should come to my gig!</they>
                 </answerWrong>
 				<answerRight>
-                    <you>I'm doing this indie game developer thing.</you>
-                    <they>Wow, good for you! It's all about creating something, right? That creative process really makes me feel at home and fills my heart with determination.</they>
+                    <you expression="smile">I'm doing this indie game developer thing.</you>
+                    <they expression="laugh">Wow, good for you! It's all about creating something, right? That creative process really makes me feel at home and fills my heart with determination.</they>
 					<they>(he smiles.)</they>
 					<you>Nice reference.</you>
-					<they>I don't get it? Well, anyway. Wanna come to my place and check out a new track I'm working on? And you gotta show me your project!</they>
+					<they expression="laugh">I don't get it? Well, anyway. Wanna come to my place and check out a new track I'm working on? And you gotta show me your project!</they>
                 </answerRight>
 				 <answerWrong>
-                    <you>I love going on heists. Just kidding.</you>
-                    <they>(he stares at you, his face unchanged.)</they>
-					<they>I don't think you should joke about things like that. Anyway, I just realized I forgot to lock my door, so I'm gonna head home now. See you at Wondrous!</they>
+                    <you expression="pout">I love going on heists. Just kidding.</you>
+                    <they expression="pout">(he stares at you, his face unchanged.)</they>
+					<they expression="pout">I don't think you should joke about things like that. Anyway, I just realized I forgot to lock my door, so I'm gonna head home now. See you at Wondrous!</they>
                 </answerWrong>
 			</question>
         </dialogue>

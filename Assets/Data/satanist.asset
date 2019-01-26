@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fb10b040b54dfab7a079b7b4e2391b, type: 3}
   m_Name: satanist
   m_EditorClassIdentifier: 
-  Photo: {fileID: 21300000, guid: b4c6b7280e107f845a3bbd8b0908b547, type: 3}
+  Photo: {fileID: 21300000, guid: 459205ad3b6a54b68ac0719b8eb92e72, type: 3}
   Expressions:
   - image: {fileID: 21300000, guid: 474aa4533cce548589311c4fd306cd19, type: 3}
     key: default

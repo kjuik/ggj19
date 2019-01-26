@@ -189,7 +189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.9720621, y: 1.45, z: -20}
+  m_LocalPosition: {x: -1.0549487, y: 1.45, z: -20}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -256,6 +256,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1199888753 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1032663746633106920, guid: e167c2d643d87a047aca5b9b8ff5164e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1032663746548136222}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1199888756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199888753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa06b36e8e524e95a9519a3fa961d51f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1414571297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -322,6 +340,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208841352904247938, guid: 6a7785270e033d14c8ca6abc2e98ed0e,
+        type: 3}
+      propertyPath: SkinColor.r
+      value: 0.9622642
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208841352904247938, guid: 6a7785270e033d14c8ca6abc2e98ed0e,
+        type: 3}
+      propertyPath: SkinColor.g
+      value: 0.6317254
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208841352904247938, guid: 6a7785270e033d14c8ca6abc2e98ed0e,
+        type: 3}
+      propertyPath: SkinColor.b
+      value: 0.4493592
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a7785270e033d14c8ca6abc2e98ed0e, type: 3}
@@ -591,6 +624,21 @@ PrefabInstance:
       propertyPath: cameraOffset
       value: 
       objectReference: {fileID: 1107055123}
+    - target: {fileID: 4113108513587936230, guid: e167c2d643d87a047aca5b9b8ff5164e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113108513587936230, guid: e167c2d643d87a047aca5b9b8ff5164e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113108513587936230, guid: e167c2d643d87a047aca5b9b8ff5164e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e167c2d643d87a047aca5b9b8ff5164e, type: 3}
 --- !u!1001 &2546343827835320713
@@ -682,7 +730,7 @@ PrefabInstance:
     - target: {fileID: 3362249548071487090, guid: 6f1651e5f9ce1c14980a08b37c2eaf42,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.9720621
+      value: -1.0549487
       objectReference: {fileID: 0}
     - target: {fileID: 3362249548071487090, guid: 6f1651e5f9ce1c14980a08b37c2eaf42,
         type: 3}

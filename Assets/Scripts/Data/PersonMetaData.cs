@@ -9,6 +9,7 @@ namespace Data
         public Sprite Photo;
         public Expression[] Expressions;
         public Color NameTextColor;
+        public Sprite StealableCarryingSprite;
     }
 
     [Serializable]

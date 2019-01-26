@@ -13,6 +13,8 @@ public class DataManager : PersistentSingletonMonoBehaviour<DataManager>
     
     public List<Person> People { get; private set; }
     public Person ChosenPerson { get; private set; }
+
+    public Color SkinColor;
     
     protected override void OnPersistentSingletonAwake()
     {

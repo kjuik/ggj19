@@ -22,6 +22,12 @@ public class CharacterSelection : MonoBehaviour
         FadeInOut.Instance.FadeOut(() => SceneManager.LoadScene("Date"));
     }
 
+    public void ToggleInfoOrPhoto()
+    {
+        Photo.gameObject.SetActive(!Photo.gameObject.activeSelf);
+        Description.gameObject.SetActive(!Description.gameObject.activeSelf);
+    }
+
     private void Refresh()
     {
         Photo.sprite = DataManager.Instance.ChosenPerson.MetaData.Photo;

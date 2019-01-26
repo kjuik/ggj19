@@ -14,7 +14,7 @@ namespace Data
         public string Bio;
         public string FurnitureComment;
         public List<DialogueBlock> Dialogue = new List<DialogueBlock>();
-
+        
         public Person(XElement personElement)
         {
             Id = personElement.GetChildValue("id");

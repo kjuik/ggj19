@@ -58,7 +58,14 @@ public class DiscussionController : MonoBehaviour {
     }
 
     void UpdateLineText(DialogueLine dialogueLine) {
-        nameText.text = dialogueLine.Speaker == Speaker.They ? ChosenPerson.Name : "You";
+        if (dialogueLine.Speaker == Speaker.They) {
+            nameText.text = ChosenPerson.Name;
+            nameText.color = ChosenPerson.MetaData.NameTextColor;
+        } else {
+            nameText.text = "You";
+            nameText.color = Color.black;
+        }
+
         dialogueText.text = dialogueLine.Text;
         dialogueText.GetComponent<TextScrolling>().Scroll();
     }

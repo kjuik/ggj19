@@ -137,46 +137,70 @@
         <id>satanist</id>
         <name>Lucious</name>
         <bio>Let me be your dungeon master ;-)</bio>
-        <furnitureComment>A St. Andrew's Cross? Is this guy for real?</furnitureComment>
+        <furnitureComment>That cross in the back... is this guy for real?</furnitureComment>
         <dialogue>
             <you>...so, if I may ask: is Lucious your real name?</you>
 			<they>It's my dungeon name.</they>
+			<you>As in, like, Dungeons and Dragons? My friends tried to show it to me once.</you>
+			<they>(he smirks.)</they>
+			<they>That as well. Let's say I'm an adventurer, like faith and nature.</they>
             <question>
-                <they>Do you like cats?</they>
+                <they>Based on that, can you guess what DnD class I'm mostly playing when I'm not DM?</they>
                 <answerWrong>
-                    <you>I guess?</you>
-                    <they>I don't think this is gonna work out if you don't love cats</they>
+                    <you>Monk.</you>
+                    <they>I'd never play that! What an insult. You forgot nature! Sorry, but I should leave now.</they>
                 </answerWrong>
                 <answerWrong>
-                    <you>No, I like dogs more</you>
-                    <they>What's wrong with you??</they>
+                    <you>Paladin.</you>
+                    <they>I'd never play that! What an insult. You forgot nature! Sorry, but I should leave now.</they>
                 </answerWrong>
 				<answerRight>
-                    <you>YES! In fact, I adore them.</you>
-                    <they>Yeah, cats are awesome</they>
+                    <you>Druid.</you>
+                    <they>You're actually right!</they>
                 </answerRight>
             </question>
-            <they>Yeah, cats are awesome</they>
-            <you>Sure agree, friend</you>
-            <they>But lets be sure</they>
-            <question>
-                <they>Cats?</they>
-                <answerRight>
-                    <you>YES</you>
-                    <they>Yeah, cats are awesome</they>
+			<they>I like messing around with cool rituals and adopting different animal forms.</they>
+			<question>
+                <they>If you could, would you rather transform into a cat or a dog?</they>
+				<answerRight>
+                    <you>A cat.</you>
+                    <they>Haha, me too! I actually have a cat myself, living underground with me. I love that little thing to death.</they>
                 </answerRight>
                 <answerWrong>
-                    <you>I guess?</you>
-                    <they>I don't think this is gonna work out if you don't love cats</they>
+                    <you>A dog.</you>
+                    <they>A dog? Unfortunately I don't think we are working out if don't love cats the most... we should stop wasting our time.</they>
                 </answerWrong>
                 <answerWrong>
-                    <you>No, I like dogs more</you>
-                    <they>What's wrong with you??</they>
+                    <you>I don't like animals and I don't want to be one.</you>
+                    <they>What's wrong with you? Sorry, I can't date uncompassionate people. It's against the rules of the coven.</they>
                 </answerWrong>
             </question>
-            <they>YOU WIN MY HEART</they>
-            <they>Lets go to my place</they>
-            <you>Sure, I guess</you>
+            <you>Underground?</you>
+			<they>It's this abandoned place giving me peace and quiet. I really enjoy that.</they>
+			<you>You also look like you got a gym in there.</you>
+			<they>(he pats his stomach.) I just eat low-carb!</they>
+			<they>But sometimes people pass by and call it urban exploring.</they>
+			<you>How do you deal with them?</you>
+			<they>I just tell them to go away...</they>
+			<they>(his eyes widen.)</they>
+			<they>Or simply invite them underground! HAHAHA!</they>
+			<you>I...</you>
+			<they>Sorry, I got a bit excited. I just like getting to know new people in person, it's easier than simder.</they>
+			<question>
+                <they>Do you consider yourself open-minded like that?</they>
+                <answerWrong>
+                    <you>Well yeah, until you scared me.</you>
+                    <they>I'm sorry, I didn't want to leave a bad impression. I actually feel a bit ashamed now, so I guess I'll just leave.</they>
+                </answerWrong>
+					<answerRight>
+                    <you>I do!</you>
+                    <they>I thought so. Let me invite you to my place for a roleplaying session tonight then! We're starting at 7.</they>
+				</answerRight>
+                <answerWrong>
+                    <you>Of course, otherwise I wouldn't have matched you.</you>
+                    <they>What does that mean? You think I'm some kind of freak? That actually hurt. I think I'll just leave now.</they>
+                </answerWrong>
+            </question>
         </dialogue>
     </person>
 	<person>
@@ -234,9 +258,10 @@
                 </answerWrong>
 				<answerRight>
                     <you>I'm doing this indie game developer thing.</you>
-                    <they>Wow, good for you! It's all about creating something, right? That creative process really makes me feel at home.</they>
+                    <they>Wow, good for you! It's all about creating something, right? That creative process really makes me feel at home and fills my heart with determination.</they>
 					<they>(he smiles.)</they>
-					<they>You wanna come to my place and check out a new track I'm working on? And you gotta show me your project!</they>
+					<you>Nice reference.</you>
+					<they>I don't get it? Well, anyway. Wanna come to my place and check out a new track I'm working on? And you gotta show me your project!</they>
                 </answerRight>
 				 <answerWrong>
                     <you>I love going on heists. Just kidding.</you>

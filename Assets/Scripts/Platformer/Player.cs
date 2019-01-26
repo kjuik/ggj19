@@ -24,9 +24,13 @@ namespace Platformer
         bool jumpStillPressed;
 
         Vector2 velocity;
+        
+        TheftManager theftManager;
 
         void Awake()
         {
+            theftManager = TheftManager.Instance;
+            
             //box = GetComponent<BoxCollider2D>();
             characterController2D = GetComponent<CharacterController2D>();
         }
@@ -92,6 +96,12 @@ namespace Platformer
         
         void Update()
         {
+            if (!theftManager.Running)
+            {
+                velocity.x = 0;
+                return;
+            }
+            
             var horizontal = Input.GetAxis("Horizontal");
             var jumpButtonDown = Input.GetButtonDown("Jump");
             var jumpButtonPressed = Input.GetButton("Jump");
@@ -114,6 +124,12 @@ namespace Platformer
             }
 
             cameraOffset.SetPosition(x: transform.position.x);
+        }
+        
+        void OnTriggerEnter2D(Collider2D other)
+        {
+            var trigger = other.GetComponent<Trigger>();
+            trigger.Execute();
         }
     }
 }

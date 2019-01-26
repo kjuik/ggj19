@@ -9,7 +9,7 @@ public class DataManager : PersistentSingletonMonoBehaviour<DataManager>
 {
     [SerializeField] TextAsset peopleXML;
     [SerializeField] PersonMetaData[] personMetaDataList;
-    [SerializeField] int defaultPerson = 0;
+    [SerializeField] PersonMetaData defaultPerson;
     
     public List<Person> People { get; private set; }
     public Person ChosenPerson { get; private set; }
@@ -29,7 +29,14 @@ public class DataManager : PersistentSingletonMonoBehaviour<DataManager>
             People.Add(new Person(personElement, personMetaDataById));
         }
 
-        ChosenPerson = People[defaultPerson];
+        foreach (var person in People)
+        {
+            if (person.MetaData == defaultPerson)
+            {
+                ChosenPerson = person;
+                break;
+            }
+        }
     }
 
     public void ChooseNextAvailablePerson()

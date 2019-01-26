@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Linq;
 using System.Collections.Generic;
 using System.Xml.Linq;
 using Data;
@@ -31,6 +31,9 @@ public class DataManager : PersistentSingletonMonoBehaviour<DataManager>
         ChosenPerson = People[0];
     }
 
-    public void ChooseNextPerson() =>
-        ChosenPerson = People[(People.IndexOf(ChosenPerson) + 1) % (People.Count)];
+    public void ChooseNextAvailablePerson()
+    {
+        var availablePeople = People.Where(p => p.Status == PersonStatus.Available).ToList();
+        ChosenPerson = availablePeople[(availablePeople.IndexOf(ChosenPerson) + 1) % (availablePeople.Count)];
+    }
 }

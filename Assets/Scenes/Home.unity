@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -487,6 +487,7 @@ GameObject:
   - component: {fileID: 245888230}
   - component: {fileID: 245888232}
   - component: {fileID: 245888231}
+  - component: {fileID: 245888233}
   m_Layer: 5
   m_Name: AnimeStealable
   m_TagString: Untagged
@@ -550,6 +551,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245888229}
   m_CullTransparentMesh: 0
+--- !u!114 &245888233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245888229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba04cbf2aa07bd942b8fa00836bc880e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterDataObject: {fileID: 11400000, guid: e02f0ab56d3e59841b4c7849761e4dbe,
+    type: 2}
 --- !u!1 &420300727
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,7 +615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -679,7 +694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -862,6 +877,7 @@ GameObject:
   - component: {fileID: 818208629}
   - component: {fileID: 818208631}
   - component: {fileID: 818208630}
+  - component: {fileID: 818208632}
   m_Layer: 5
   m_Name: StudentStealable
   m_TagString: Untagged
@@ -925,6 +941,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 818208628}
   m_CullTransparentMesh: 0
+--- !u!114 &818208632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818208628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba04cbf2aa07bd942b8fa00836bc880e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterDataObject: {fileID: 11400000, guid: c9e1483e42e43934bb8845732ab70a2f,
+    type: 2}
 --- !u!1 &839826122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,7 +1146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1269,7 +1299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1309,6 +1339,7 @@ GameObject:
   - component: {fileID: 1440630078}
   - component: {fileID: 1440630080}
   - component: {fileID: 1440630079}
+  - component: {fileID: 1440630081}
   m_Layer: 5
   m_Name: SatanistStealable
   m_TagString: Untagged
@@ -1372,6 +1403,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1440630077}
   m_CullTransparentMesh: 0
+--- !u!114 &1440630081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440630077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba04cbf2aa07bd942b8fa00836bc880e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterDataObject: {fileID: 11400000, guid: 8dfe329e4795b5647ac9d2f6a001193e,
+    type: 2}
 --- !u!1 &1515265098
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,6 +1428,7 @@ GameObject:
   - component: {fileID: 1515265099}
   - component: {fileID: 1515265101}
   - component: {fileID: 1515265100}
+  - component: {fileID: 1515265102}
   m_Layer: 5
   m_Name: DjStealable
   m_TagString: Untagged
@@ -1446,6 +1492,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515265098}
   m_CullTransparentMesh: 0
+--- !u!114 &1515265102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515265098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba04cbf2aa07bd942b8fa00836bc880e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterDataObject: {fileID: 11400000, guid: 38273a87544f59346b06d47f018ee779,
+    type: 2}
 --- !u!1 &1713732584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1455,6 +1515,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1713732585}
+  - component: {fileID: 1713732586}
   m_Layer: 5
   m_Name: Stealables
   m_TagString: Untagged
@@ -1485,6 +1546,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1713732586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713732584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c45492d20eaf8b47bcf55f12267d876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1852175537
 GameObject:
   m_ObjectHideFlags: 0

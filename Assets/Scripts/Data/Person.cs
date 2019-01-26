@@ -15,6 +15,8 @@ namespace Data
         public string FurnitureComment;
         public PersonMetaData MetaData;
         public List<DialogueBlock> Dialogue = new List<DialogueBlock>();
+
+        public PersonStatus Status { get; set; } = PersonStatus.Available;
         
         public Person(XElement personElement, Dictionary<string, PersonMetaData> personMetaDataById)
         {

@@ -13,7 +13,7 @@ public class CharacterSelection : MonoBehaviour
 
     public void Next()
     {
-        DataManager.Instance.ChooseNextPerson();
+        DataManager.Instance.ChooseNextAvailablePerson();
         Refresh();
     }
 

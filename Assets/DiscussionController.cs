@@ -17,6 +17,7 @@ public class DiscussionController : MonoBehaviour {
     public Text lineBeforeTheft;
     [SerializeField] string lineBeforeTheftText;
     int currentDialogueNode;
+    bool showAnswersNext;
     
     Person ChosenPerson => DataManager.Instance.ChosenPerson;
     
@@ -25,24 +26,36 @@ public class DiscussionController : MonoBehaviour {
         lineBeforeTheft.gameObject.SetActive(false);
         nameText.text = ChosenPerson.Name;
         character.sprite = ChosenPerson.MetaData.DatingCharacter;
-        UpdateDialogue();
+        GoToNewDialogue();
     }
 
     public void Next() 
     {
+        IfNotScrolling(UpdateDialogue);
+    }
+
+    void IfNotScrolling(Action action) {
         var scroller = dialogueText.GetComponent<TextScrolling>();
         if (scroller.isScrolling)
             scroller.SkipScrolling();
         else {
+            action();
+        }
+    }
+
+    void UpdateDialogue() {
+        if (showAnswersNext)
+            ShowAnswers((DialogueQuestion)ChosenPerson.Dialogue[currentDialogueNode]);
+        else {
             currentDialogueNode++;
             if (currentDialogueNode < ChosenPerson.Dialogue.Count)
-                UpdateDialogue();
+                GoToNewDialogue();
             else
                 FadeInOut.Instance.FadeOut(ShowLineBeforeTheft);
         }
     }
 
-    void UpdateDialogue() {
+    void GoToNewDialogue() {
         switch (ChosenPerson.Dialogue[currentDialogueNode].Type) {
             case DialogueBlockType.Line:
                 ShowLine((DialogueLine) ChosenPerson.Dialogue[currentDialogueNode]);
@@ -61,6 +74,11 @@ public class DiscussionController : MonoBehaviour {
         UpdateLineText(dialogueLine);
     }
 
+    void ShowQuestion(DialogueQuestion dialogueQuestion) {
+        ShowLine(dialogueQuestion.QuestionLine);
+        showAnswersNext = true;
+    }
+
     void UpdateLineText(DialogueLine dialogueLine) {
         if (dialogueLine.Speaker == Speaker.They) {
             nameText.text = ChosenPerson.Name;
@@ -74,7 +92,8 @@ public class DiscussionController : MonoBehaviour {
         dialogueText.GetComponent<TextScrolling>().Scroll();
     }
 
-    void ShowQuestion(DialogueQuestion dialogueQuestion) {
+    void ShowAnswers(DialogueQuestion dialogueQuestion) {
+        showAnswersNext = false;
         next.gameObject.SetActive(false);
 
         for (var i = 0; i < answers.Count; i++) {
@@ -83,8 +102,6 @@ public class DiscussionController : MonoBehaviour {
             var answer = dialogueQuestion.Answers[i];
             answers[i].onClick.AddListener(() => OnAnswer(answer));
         }
-
-        UpdateLineText(dialogueQuestion.QuestionLine);
     }
 
     void OnAnswer(DialogueAnswer dialogueQuestionAnswer) {
@@ -101,7 +118,7 @@ public class DiscussionController : MonoBehaviour {
     
     public void GoHome()
     {
-        FadeInOut.Instance.FadeOut(() => SceneManager.LoadScene("Home"));
+        IfNotScrolling(() => FadeInOut.Instance.FadeOut(() => SceneManager.LoadScene("Home")));
     }
 
     public void GoToTheft() {

@@ -105,7 +105,8 @@
                 <answerWrong>
                     <you>I’m looking for a flat.</you>
                     <they>Sorry, can't help with that. I think I'm actually heading out now. Thanks for the coffee!</they>
-                </answerWrong>    	
+                </answerWrong>
+            </question>    	
         </dialogue>
     </person>
 	<person>

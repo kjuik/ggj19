@@ -30,12 +30,16 @@ public class DiscussionController : MonoBehaviour {
 
     public void Next() 
     {
-        currentDialogueNode++;
-
-        if (currentDialogueNode < ChosenPerson.Dialogue.Count)
-            UpdateDialogue();
-        else
-            FadeInOut.Instance.FadeOut(ShowLineBeforeTheft);
+        var scroller = dialogueText.GetComponent<TextScrolling>();
+        if (scroller.isScrolling)
+            scroller.SkipScrolling();
+        else {
+            currentDialogueNode++;
+            if (currentDialogueNode < ChosenPerson.Dialogue.Count)
+                UpdateDialogue();
+            else
+                FadeInOut.Instance.FadeOut(ShowLineBeforeTheft);
+        }
     }
 
     void UpdateDialogue() {

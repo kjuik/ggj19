@@ -10,19 +10,23 @@ public class TextScrolling : MonoBehaviour
     [SerializeField] float secondsPerLetter = 0.025f;
 
     Text text;
+    string fullText;
+    public bool isScrolling;
 
-    void Awake() =>
+    void Awake() {
         text = GetComponent<Text>();
-        
+        fullText = text.text;
+    }
+
     public void Scroll()
     {
         StopAllCoroutines();
         StartCoroutine(ScrollCoroutine());
     }
 
-    IEnumerator ScrollCoroutine()
-    {
-        var fullText = text.text;
+    IEnumerator ScrollCoroutine() {
+        isScrolling = true;
+        fullText = text.text;
         var currentText = "";
         var remainingText = fullText;
         var currentLetterIndex = 0;
@@ -41,5 +45,13 @@ public class TextScrolling : MonoBehaviour
 
             text.text = currentText + startTransparentTag + remainingText + endTransparentTag;
         }
+
+        isScrolling = false;
+    }
+
+    public void SkipScrolling() {
+        StopAllCoroutines();
+        text.text = fullText;
+        isScrolling = false;
     }
 }

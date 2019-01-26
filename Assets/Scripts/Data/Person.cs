@@ -13,15 +13,22 @@ namespace Data
         public string Name;
         public string Bio;
         public string FurnitureComment;
+        public PersonMetaData MetaData;
         public List<DialogueBlock> Dialogue = new List<DialogueBlock>();
         
-        public Person(XElement personElement)
+        public Person(XElement personElement, Dictionary<string, PersonMetaData> personMetaDataById)
         {
             Id = personElement.GetChildValue("id");
             Name = personElement.GetChildValue("name");
             Bio = personElement.GetChildValue("bio");
             FurnitureComment = personElement.GetChildValue("furnitureComment");
 
+            if (!personMetaDataById.TryGetValue(Id, out MetaData))
+            {
+                Debug.LogError("There is no meta data for ID: " + Id);
+                MetaData = new PersonMetaData();
+            }
+            
             foreach (var element in personElement.Element(XName.Get("dialogue")).Elements())
             {
                 switch (element.Name.LocalName)

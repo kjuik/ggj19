@@ -37,4 +37,10 @@ public class DataManager : PersistentSingletonMonoBehaviour<DataManager>
         var availablePeople = People.Where(p => p.Status == PersonStatus.Available).ToList();
         ChosenPerson = availablePeople[(availablePeople.IndexOf(ChosenPerson) + 1) % (availablePeople.Count)];
     }
+
+    public void Reset() {
+        foreach (var person in People)
+            person.Status = PersonStatus.Available;
+        ChosenPerson = People[0];
+    }
 }

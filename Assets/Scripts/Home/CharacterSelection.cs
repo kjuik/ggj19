@@ -65,4 +65,9 @@ public class CharacterSelection : MonoBehaviour
         foreach (var go in ActivateOnEndGame)
             go.SetActive(true);
     }
+
+    public void GoToTitle() {
+        DataManager.Instance.Reset();
+        FadeInOut.Instance.FadeOut(() => SceneManager.LoadScene("SplashScreen"));
+    }
 }

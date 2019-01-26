@@ -114,7 +114,7 @@
                 </answerWrong>
             </question>
 			<question>
-			<they>What are you looking for on swipe?</they>
+				<they>What are you looking for on swipe?</they>
                 <answerRight>
                     <you>A little break, a nice conversation and a good coffee.</you>
                     <they>To be honest, the coffee here is shit. Let’s go back to my place.</they>
@@ -126,7 +126,8 @@
                 <answerWrong>
                     <you>I’m looking for a flat.</you>
                     <they>Sorry, can't help with that. I think I'm actually heading out now. Thanks for the coffee!</they>
-                </answerWrong>    	
+                </answerWrong>
+			</question>
         </dialogue>
     </person>
 	<person>

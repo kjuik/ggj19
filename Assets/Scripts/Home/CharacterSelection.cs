@@ -19,7 +19,7 @@ public class CharacterSelection : MonoBehaviour
 
     public void Date()
     {
-        SceneManager.LoadScene("Date");
+        FadeInOut.Instance.FadeOut(() => SceneManager.LoadScene("Date"));
     }
 
     private void Refresh()

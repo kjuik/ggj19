@@ -11,6 +11,7 @@ namespace Platformer
         [SerializeField] GameObject playerKilledNotification;
         [SerializeField] GameObject playerWonNotification;
         [SerializeField] float waitUntilFadeout = 1f;
+        [SerializeField] Transform levelContainer;
 
         public bool Running { get; private set; }
 
@@ -20,6 +21,17 @@ namespace Platformer
             overlay.SetActive(false);
             playerKilledNotification.SetActive(false);
             playerWonNotification.SetActive(false);
+        }
+
+        void Start()
+        {
+            for (var i = 0; i < levelContainer.childCount; i++)
+            {
+                levelContainer.GetChild(i).gameObject.SetActive(false);
+            }
+            
+            var level = levelContainer.Find(DataManager.Instance.ChosenPerson.Id);
+            level.gameObject.SetActive(true);
         }
         
         public void KillPlayer()

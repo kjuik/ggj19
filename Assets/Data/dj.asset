@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fb10b040b54dfab7a079b7b4e2391b, type: 3}
   m_Name: dj
   m_EditorClassIdentifier: 
-  Id: dj
-  Photo: {fileID: 0}
+  Photo: {fileID: 21300000, guid: 4f5c7ae2bc42b7543ba1e8b823af136d, type: 3}
   DatingCharacter: {fileID: 0}

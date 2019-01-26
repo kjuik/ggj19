@@ -1,4 +1,5 @@
 ﻿using System.Xml.Linq;
+using UnityEngine;
 
 namespace DefaultNamespace
 {
@@ -6,7 +7,14 @@ namespace DefaultNamespace
     {
         public static string GetChildValue(this XElement xElement, string childName)
         {
-            return xElement.Element(XName.Get(childName)).Value;
+            var child = xElement.Element(XName.Get(childName));
+            if (child == null)
+            {
+                Debug.LogError("Child not found: " + childName + " in " + xElement);
+                return "";
+            }
+            
+            return child.Value;
         }
     }
 }

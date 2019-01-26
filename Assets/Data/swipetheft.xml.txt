@@ -10,21 +10,36 @@
             <they>I'm Kiki</they>
             <you>I know</you>
             <question>
-                <text>Cats?</text>
-                <answerRight>YES</answerRight>
-                <answerWrong>No</answerWrong>
-                <answerWrong>DOGS</answerWrong>
-                <failure>You are a monster</failure>
+                <they>Cats?</they>
+                <answerRight>
+                    <you>YES</you>
+                    <they>Yeah, cats are awesome</they>
+                </answerRight>
+                <answerWrong>
+                    <you>I guess?</you>
+                    <they>I don't think this is gonna work out if you don't love cats</they>
+                </answerWrong>
+                <answerWrong>
+                    <you>No, I like dogs more</you>
+                    <they>What's wrong with you??</they>
+                </answerWrong>
             </question>
-            <they>Yeah, cats are awesome</they>
             <you>Sure agree, friend</you>
             <they>But lets be sure</they>
             <question>
-                <text>Cats?</text>
-                <answerRight>YES</answerRight>
-                <answerWrong>No</answerWrong>
-                <answerWrong>DOGS</answerWrong>
-                <failure>You are a monster</failure>
+                <they>Cats?</they>
+                <answerRight>
+                    <you>YES</you>
+                    <they>Yeah, cats are awesome</they>
+                </answerRight>
+                <answerWrong>
+                    <you>I guess?</you>
+                    <they>I don't think this is gonna work out if you don't love cats</they>
+                </answerWrong>
+                <answerWrong>
+                    <you>No, I like dogs more</you>
+                    <they>What's wrong with you??</they>
+                </answerWrong>
             </question>
             <they>YOU WIN MY HEART</they>
             <they>Lets go to my place</they>
@@ -42,21 +57,37 @@
             <they>I'm Karen</they>
             <you>I know</you>
             <question>
-                <text>Cats?</text>
-                <answerRight>YES</answerRight>
-                <answerWrong>No</answerWrong>
-                <answerWrong>DOGS</answerWrong>
-                <failure>You are a monster</failure>
-            </question>
+                <they>Cats?</they>
+                <answerRight>
+                    <you>YES</you>
+                    <they>Yeah, cats are awesome</they>
+                </answerRight>
+                <answerWrong>
+                    <you>I guess?</you>
+                    <they>I don't think this is gonna work out if you don't love cats</they>
+                </answerWrong>
+                <answerWrong>
+                    <you>No, I like dogs more</you>
+                    <they>What's wrong with you??</they>
+                </answerWrong>
+           </question>
             <they>Yeah, cats are awesome</they>
             <you>Sure agree, friend</you>
             <they>But lets be sure</they>
             <question>
-                <text>Cats?</text>
-                <answerRight>YES</answerRight>
-                <answerWrong>No</answerWrong>
-                <answerWrong>DOGS</answerWrong>
-                <failure>You are a monster</failure>
+                <they>Cats?</they>
+                <answerRight>
+                    <you>YES</you>
+                    <they>Yeah, cats are awesome</they>
+                </answerRight>
+                <answerWrong>
+                    <you>I guess?</you>
+                    <they>I don't think this is gonna work out if you don't love cats</they>
+                </answerWrong>
+                <answerWrong>
+                    <you>No, I like dogs more</you>
+                    <they>What's wrong with you??</they>
+                </answerWrong>
             </question>
             <they>YOU WIN MY HEART</they>
             <they>Lets go to my place</they>
@@ -74,21 +105,37 @@
             <they>I'm Lucious</they>
             <you>I know</you>
             <question>
-                <text>Cats?</text>
-                <answerRight>YES</answerRight>
-                <answerWrong>No</answerWrong>
-                <answerWrong>DOGS</answerWrong>
-                <failure>You are a monster</failure>
+                <they>Cats?</they>
+                <answerRight>
+                    <you>YES</you>
+                    <they>Yeah, cats are awesome</they>
+                </answerRight>
+                <answerWrong>
+                    <you>I guess?</you>
+                    <they>I don't think this is gonna work out if you don't love cats</they>
+                </answerWrong>
+                <answerWrong>
+                    <you>No, I like dogs more</you>
+                    <they>What's wrong with you??</they>
+                </answerWrong>
             </question>
             <they>Yeah, cats are awesome</they>
             <you>Sure agree, friend</you>
             <they>But lets be sure</they>
             <question>
-                <text>Cats?</text>
-                <answerRight>YES</answerRight>
-                <answerWrong>No</answerWrong>
-                <answerWrong>DOGS</answerWrong>
-                <failure>You are a monster</failure>
+                <they>Cats?</they>
+                <answerRight>
+                    <you>YES</you>
+                    <they>Yeah, cats are awesome</they>
+                </answerRight>
+                <answerWrong>
+                    <you>I guess?</you>
+                    <they>I don't think this is gonna work out if you don't love cats</they>
+                </answerWrong>
+                <answerWrong>
+                    <you>No, I like dogs more</you>
+                    <they>What's wrong with you??</they>
+                </answerWrong>
             </question>
             <they>YOU WIN MY HEART</they>
             <they>Lets go to my place</they>
@@ -106,21 +153,37 @@
             <they>I'm Maze</they>
             <you>I know</you>
             <question>
-                <text>Cats?</text>
-                <answerRight>YES</answerRight>
-                <answerWrong>No</answerWrong>
-                <answerWrong>DOGS</answerWrong>
-                <failure>You are a monster</failure>
+                <they>Cats?</they>
+                <answerRight>
+                    <you>YES</you>
+                    <they>Yeah, cats are awesome</they>
+                </answerRight>
+                <answerWrong>
+                    <you>I guess?</you>
+                    <they>I don't think this is gonna work out if you don't love cats</they>
+                </answerWrong>
+                <answerWrong>
+                    <you>No, I like dogs more</you>
+                    <they>What's wrong with you??</they>
+                </answerWrong>
             </question>
             <they>Yeah, cats are awesome</they>
             <you>Sure agree, friend</you>
             <they>But lets be sure</they>
             <question>
-                <text>Cats?</text>
-                <answerRight>YES</answerRight>
-                <answerWrong>No</answerWrong>
-                <answerWrong>DOGS</answerWrong>
-                <failure>You are a monster</failure>
+                <they>Cats?</they>
+                <answerRight>
+                    <you>YES</you>
+                    <they>Yeah, cats are awesome</they>
+                </answerRight>
+                <answerWrong>
+                    <you>I guess?</you>
+                    <they>I don't think this is gonna work out if you don't love cats</they>
+                </answerWrong>
+                <answerWrong>
+                    <you>No, I like dogs more</you>
+                    <they>What's wrong with you??</they>
+                </answerWrong>
             </question>
             <they>YOU WIN MY HEART</they>
             <they>Lets go to my place</they>

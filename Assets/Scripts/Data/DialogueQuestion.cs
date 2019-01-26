@@ -10,35 +10,27 @@ namespace Data
         
         public DialogueLine QuestionLine;
         public List<DialogueAnswer> Answers;
-        public DialogueLine FailLine;
 
-        public DialogueQuestion(DialogueLine questionLine, List<DialogueAnswer> answers, DialogueLine failLine)
+        public DialogueQuestion(DialogueLine questionLine, List<DialogueAnswer> answers)
         {
             QuestionLine = questionLine;
             Answers = answers;
-            FailLine = failLine;
         }
 
         public static DialogueQuestion Parse(XElement element)
         {
-            var questionLine = new DialogueLine(Speaker.They, element.GetChildValue("text"));
+            var questionLine = new DialogueLine(Speaker.They, element.GetChildValue("they"));
             var answers = new List<DialogueAnswer>();
             foreach (var subElement in element.Elements())
             {
-                AddAnswers(answers, subElement, "answerRight", true);
-                AddAnswers(answers, subElement, "answerWrong", false);
+                var subElementName = subElement.Name.LocalName;
+                if (subElementName.StartsWith("answer"))
+                {
+                    answers.Add(DialogueAnswer.Parse(subElement));
+                }
             }
 
-            var failLine = new DialogueLine(Speaker.They, element.GetChildValue("failure"));
-            return new DialogueQuestion(questionLine, answers, failLine);
+            return new DialogueQuestion(questionLine, answers);
         }
-
-        static void AddAnswers(List<DialogueAnswer> answers, XElement subElement, string desiredElementName, bool isRightAnswer)
-        {
-            if (subElement.Name.LocalName.Equals(desiredElementName))
-            {
-                answers.Add(new DialogueAnswer(isRightAnswer, subElement.Value));
-            }
-        }
-    }
+   }
 }

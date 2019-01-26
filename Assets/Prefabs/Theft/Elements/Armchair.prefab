@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb823bf8972b4eef90db58f652f4efce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceImpulse: 5
+  bounceImpulse: 6
 --- !u!61 &6223560052006483861
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 ﻿using System;
 using Prime31;
 using UnityEngine;
+using UnityUtilities;
 
 namespace Platformer
 {
@@ -9,6 +10,7 @@ namespace Platformer
         [SerializeField] float walkingSpeed = 10;
         [SerializeField] float jumpImpulse;
         [SerializeField] float gravity = -10f;
+        [SerializeField] Transform cameraOffset;
         //[SerializeField] LayerMask collisionLayerMask;
         
         //BoxCollider2D box;
@@ -88,6 +90,8 @@ namespace Platformer
             {
                 velocity.y = jumpImpulse;
             }
+
+            cameraOffset.SetPosition(x: transform.position.x);
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using Prime31;
 using UnityEngine;
+using UnityUtilities;
 
 namespace Platformer
 {
@@ -8,13 +9,19 @@ namespace Platformer
     {
         [SerializeField] float walkingSpeed = 10;
         [SerializeField] float jumpImpulse;
-        [SerializeField] float gravity = -10f;
+        [SerializeField] float gravityJumpStillPressedMultiplier = 1f;
+        [SerializeField] float gravityJumpReleasedMultiplier = 1f;
+        [SerializeField] float gravityBase = -1f;
+        [SerializeField] bool immediatelyStopUpwardMotionOnJumpRelease;
+        [SerializeField] Transform cameraOffset;
         //[SerializeField] LayerMask collisionLayerMask;
         
         //BoxCollider2D box;
         CharacterController2D characterController2D;
         
         //RaycastHit2D[] boxcastResultsSingle = new RaycastHit2D[1];
+
+        bool jumpStillPressed;
 
         Vector2 velocity;
 
@@ -26,7 +33,13 @@ namespace Platformer
 
         void FixedUpdate()
         {
-            velocity.y += gravity;
+            var gravityMultiplier = 1f;
+            if (velocity.y > 0)
+            {
+                gravityMultiplier = jumpStillPressed ? gravityJumpStillPressedMultiplier : gravityJumpReleasedMultiplier;
+            }
+
+            velocity.y += gravityBase * gravityMultiplier * Time.deltaTime;
 
             characterController2D.move(new Vector3(velocity.x * Time.deltaTime, velocity.y * Time.deltaTime));
             if (characterController2D.collisionState.below || characterController2D.collisionState.above)
@@ -80,14 +93,27 @@ namespace Platformer
         void Update()
         {
             var horizontal = Input.GetAxis("Horizontal");
-            var jumpPressed = Input.GetButtonDown("Jump");
+            var jumpButtonDown = Input.GetButtonDown("Jump");
+            var jumpButtonPressed = Input.GetButton("Jump");
 
             velocity.x = horizontal * walkingSpeed;
 
-            if (jumpPressed && characterController2D.isGrounded)
+            if (jumpButtonDown && characterController2D.isGrounded)
             {
                 velocity.y = jumpImpulse;
+                jumpStillPressed = true;
             }
+
+            if (jumpStillPressed && !jumpButtonPressed)
+            {
+                jumpStillPressed = false;
+                if ((velocity.y > 0) && immediatelyStopUpwardMotionOnJumpRelease)
+                {
+                    velocity.y = 0;
+                }
+            }
+
+            cameraOffset.SetPosition(x: transform.position.x);
         }
     }
 }

@@ -14,12 +14,21 @@ public class CharacterSelection : MonoBehaviour
     public void Next()
     {
         DataManager.Instance.ChooseNextAvailablePerson();
+        if (!Photo.gameObject.activeSelf)
+            ToggleInfoOrPhoto();
+
         Refresh();
     }
 
     public void Date()
     {
         FadeInOut.Instance.FadeOut(() => SceneManager.LoadScene("Date"));
+    }
+
+    public void ToggleInfoOrPhoto()
+    {
+        Photo.gameObject.SetActive(!Photo.gameObject.activeSelf);
+        Description.gameObject.SetActive(!Description.gameObject.activeSelf);
     }
 
     private void Refresh()

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Xml.Linq;
 using Data;
 using UnityEngine;
@@ -10,8 +11,9 @@ public class DataManager : PersistentSingletonMonoBehaviour<DataManager>
     [SerializeField] PersonMetaData[] personMetaDataList;
     
     public List<Person> People { get; private set; }
+    public Person ChosenPerson { get; private set; }
     
-    void Awake()
+    protected override void OnPersistentSingletonAwake()
     {
         var personMetaDataById = new Dictionary<string, PersonMetaData>();
         foreach (var personMetaData in personMetaDataList)
@@ -25,5 +27,10 @@ public class DataManager : PersistentSingletonMonoBehaviour<DataManager>
         {
             People.Add(new Person(personElement, personMetaDataById));
         }
+
+        ChosenPerson = People[0];
     }
+
+    public void ChooseNextPerson() =>
+        ChosenPerson = People[(People.IndexOf(ChosenPerson) + 1) % (People.Count)];
 }

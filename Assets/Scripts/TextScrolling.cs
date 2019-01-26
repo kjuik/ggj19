@@ -4,13 +4,12 @@ using UnityEngine.UI;
 
 public class TextScrolling : MonoBehaviour
 {
+    const string startTransparentTag = "<color=#00000000>";
+    const string endTransparentTag = "</color>";
+
     [SerializeField] float secondsPerLetter = 0.025f;
 
     Text text;
-
-    string fullText;
-    string currentText;
-    int nextLetterIndex;
 
     void Awake() =>
         text = GetComponent<Text>();
@@ -23,20 +22,24 @@ public class TextScrolling : MonoBehaviour
 
     IEnumerator ScrollCoroutine()
     {
-        fullText = text.text;
-        string currentText = "";
-        nextLetterIndex = 0;
+        var fullText = text.text;
+        var currentText = "";
+        var remainingText = fullText;
+        var currentLetterIndex = 0;
 
-        text.text = currentText;
+        text.text = currentText + startTransparentTag + remainingText + endTransparentTag;
 
         while (currentText != fullText)
         {
             yield return new WaitForSeconds(secondsPerLetter);
 
-            currentText += fullText[nextLetterIndex];
-            nextLetterIndex++;
+            currentLetterIndex++;
+            currentText = fullText.Substring(0, currentLetterIndex);
+            remainingText = currentLetterIndex >= fullText.Length ?
+                "" : 
+                fullText.Substring(currentLetterIndex);
 
-            text.text = currentText;
+            text.text = currentText + startTransparentTag + remainingText + endTransparentTag;
         }
     }
 }

@@ -14,6 +14,9 @@ public class CharacterSelection : MonoBehaviour
     public void Next()
     {
         DataManager.Instance.ChooseNextAvailablePerson();
+        if (!Photo.gameObject.activeSelf)
+            ToggleInfoOrPhoto();
+
         Refresh();
     }
 

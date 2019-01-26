@@ -14,6 +14,8 @@ namespace Platformer
         [SerializeField] float gravityBase = -1f;
         [SerializeField] bool immediatelyStopUpwardMotionOnJumpRelease;
         [SerializeField] Transform cameraOffset;
+
+        [SerializeField] GameObject carryingObjectObject;
         //[SerializeField] LayerMask collisionLayerMask;
         
         //BoxCollider2D box;
@@ -152,6 +154,16 @@ namespace Platformer
         public void Bounce(float bounceImpulse)
         {
             velocity.y = bounceImpulse;
+        }
+
+        public void UnlockCarryingObject()
+        {
+            carryingObjectObject.SetActive(true);
+        }
+
+        public bool IsCarryingObjectUnlocked
+        {
+            get { return carryingObjectObject.activeSelf; }
         }
     }
 }

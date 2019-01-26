@@ -1,12 +1,13 @@
-﻿using UnityEngine;
-
-namespace Platformer
+﻿namespace Platformer
 {
     public class TriggerExit : Trigger
     {
         public override void Execute()
         {
-            TheftManager.Instance.ReachedExit();
+            if (Player.Instance.IsCarryingObjectUnlocked)
+            {
+                TheftManager.Instance.ReachedExit();
+            }
         }
     }
 }

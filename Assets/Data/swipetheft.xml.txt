@@ -148,11 +148,11 @@
                 <they>Based on that, can you guess what DnD class I'm mostly playing when I'm not DM?</they>
                 <answerWrong>
                     <you>Monk.</you>
-                    <they>I'd never play that! What an insult. Sorry, but I should leave now.</they>
+                    <they>I'd never play that! What an insult. You forgot nature! Sorry, but I should leave now.</they>
                 </answerWrong>
                 <answerWrong>
                     <you>Paladin.</you>
-                    <they>I'd never play that! What an insult. Sorry, but I should leave now.</they>
+                    <they>I'd never play that! What an insult. You forgot nature! Sorry, but I should leave now.</they>
                 </answerWrong>
 				<answerRight>
                     <you>Druid.</you>

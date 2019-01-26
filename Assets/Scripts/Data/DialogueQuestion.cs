@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Xml.Linq;
 using DefaultNamespace;
+using UnityEngine;
 
 namespace Data
 {
@@ -19,7 +21,7 @@ namespace Data
 
         public static DialogueQuestion Parse(XElement element)
         {
-            var questionLine = new DialogueLine(Speaker.They, element.GetChildValue("they"));
+            var questionLine = DialogueLine.Parse(element.Element(XName.Get("they")));
             var answers = new List<DialogueAnswer>();
             foreach (var subElement in element.Elements())
             {

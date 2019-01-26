@@ -13,5 +13,19 @@ MonoBehaviour:
   m_Name: satanist
   m_EditorClassIdentifier: 
   Photo: {fileID: 21300000, guid: b4c6b7280e107f845a3bbd8b0908b547, type: 3}
-  DatingCharacter: {fileID: 21300000, guid: 474aa4533cce548589311c4fd306cd19, type: 3}
+  Expressions:
+  - image: {fileID: 21300000, guid: 474aa4533cce548589311c4fd306cd19, type: 3}
+    key: default
+  - image: {fileID: 21300000, guid: 4b1472a7903a34133a6148f572232b28, type: 3}
+    key: awkward
+  - image: {fileID: 21300000, guid: 0e0deec537bfc426f8e1e280e326c572, type: 3}
+    key: pout
+  - image: {fileID: 21300000, guid: 23e5c5932b7044b29984353352523055, type: 3}
+    key: cheeky
+  - image: {fileID: 21300000, guid: ff90e4dc9e15b42619071fcba8ad68e5, type: 3}
+    key: unhappy
+  - image: {fileID: 21300000, guid: 7aa89bf229eb541dfad3a6949aab9c52, type: 3}
+    key: smile
+  - image: {fileID: 21300000, guid: 06d09e74dcdf64d9ca31cc395faab85e, type: 3}
+    key: laugh
   NameTextColor: {r: 0.5376251, g: 0, b: 0.8584906, a: 1}

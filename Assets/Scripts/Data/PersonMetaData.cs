@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Data
 {
@@ -6,7 +7,13 @@ namespace Data
     public class PersonMetaData : ScriptableObject
     {
         public Sprite Photo;
-        public Sprite DatingCharacter;
+        public Expression[] Expressions;
         public Color NameTextColor;
+    }
+
+    [Serializable]
+    public class Expression {
+        public Sprite image;
+        public string key;
     }
 }

@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Data;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -25,7 +24,6 @@ public class DiscussionController : MonoBehaviour {
         goHome.gameObject.SetActive(false);
         lineBeforeTheft.gameObject.SetActive(false);
         nameText.text = ChosenPerson.Name;
-        character.sprite = ChosenPerson.MetaData.DatingCharacter;
         GoToNewDialogue();
     }
 
@@ -88,6 +86,9 @@ public class DiscussionController : MonoBehaviour {
             nameText.color = Color.black;
         }
 
+        character.sprite = ChosenPerson.MetaData.Expressions
+                                       .First(expression => expression.key == dialogueLine.Expression).image;
+        
         dialogueText.text = dialogueLine.Text;
         dialogueText.GetComponent<TextScrolling>().Scroll();
     }

@@ -13,5 +13,19 @@ MonoBehaviour:
   m_Name: dj
   m_EditorClassIdentifier: 
   Photo: {fileID: 21300000, guid: 4f5c7ae2bc42b7543ba1e8b823af136d, type: 3}
-  DatingCharacter: {fileID: 21300000, guid: e9721edbd97ea489da210f97d834c105, type: 3}
+  Expressions:
+  - image: {fileID: 21300000, guid: e9721edbd97ea489da210f97d834c105, type: 3}
+    key: default
+  - image: {fileID: 21300000, guid: 5a8763873b3a24599893d745bcc24c94, type: 3}
+    key: awkward
+  - image: {fileID: 21300000, guid: 2201188f1472f4160b5ee148ae67b4f5, type: 3}
+    key: pout
+  - image: {fileID: 21300000, guid: d547f6347d1fd48c38cd134203b983f9, type: 3}
+    key: cheeky
+  - image: {fileID: 21300000, guid: f50fe0c76fad04505947910ec8aa8f4d, type: 3}
+    key: unhappy
+  - image: {fileID: 21300000, guid: af230ae8938414560bfec21ed776c9a0, type: 3}
+    key: smile
+  - image: {fileID: 21300000, guid: 00b3c294d63654e64a3e17aebf8da087, type: 3}
+    key: laugh
   NameTextColor: {r: 1, g: 0.5615012, b: 0, a: 1}

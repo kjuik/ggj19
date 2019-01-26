@@ -13,5 +13,19 @@ MonoBehaviour:
   m_Name: anime
   m_EditorClassIdentifier: 
   Photo: {fileID: 21300000, guid: 8e53791b16c0f274daff24027036805f, type: 3}
-  DatingCharacter: {fileID: 21300000, guid: 3f08b876e1caa4f14aa37fbca5439cf7, type: 3}
+  Expressions:
+  - image: {fileID: 21300000, guid: 3f08b876e1caa4f14aa37fbca5439cf7, type: 3}
+    key: default
+  - image: {fileID: 21300000, guid: 57fca9d409c8f474fbc0c518ab9d598f, type: 3}
+    key: unhappy
+  - image: {fileID: 21300000, guid: 22cb4172fc4494503987d01b360f66dc, type: 3}
+    key: awkward
+  - image: {fileID: 21300000, guid: feec9eeb1322e46c48cf9df1c1aea6fa, type: 3}
+    key: cheeky
+  - image: {fileID: 21300000, guid: d751b8753b1514a5e8610bd712d4652c, type: 3}
+    key: laugh
+  - image: {fileID: 21300000, guid: 78ebd59d04cfc42d99a4b3441d2ba725, type: 3}
+    key: pout
+  - image: {fileID: 21300000, guid: 7ed1d103fc7274f1d93489d8af752a37, type: 3}
+    key: smile
   NameTextColor: {r: 1, g: 0, b: 0.59708786, a: 1}

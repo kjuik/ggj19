@@ -3,7 +3,7 @@
         <id>anime</id>
         <name>Kiki</name>
         <bio>Heyyy!!! KiKi here, looking for a cute Otaku boy *.* No weirdos or cosplay requests pls... and YES, I know Death Note. Get a taste. Featured at AnimeCon 19!! ^__^</bio>
-        <furnitureComment>What a nice limited edition Naruto poster</furnitureComment>
+        <furnitureComment>Is that a body pillow? Girl must be super lonely...</furnitureComment>
         <dialogue>
             <they>Hello</they>
             <you>Hello!</you>
@@ -50,55 +50,69 @@
         <id>student</id>
         <name>Karen</name>
         <bio>Engineering student at TU. Coffee addict, book nerd, grammar nazi. Awkward as fuck - hate clubs and small talk. NOT looking for hookups.</bio>
-        <furnitureComment>What a nice limited edition dog poster</furnitureComment>
+        <furnitureComment>A coffee maker 3000? Damn. I could never afford to drop that kind of money for my morning latte.</furnitureComment>
         <dialogue>
-            <they>Hello</they>
-            <you>Hello!</you>
-            <they>I'm Karen</they>
-            <you>I know</you>
+            <you>-…so, is this your first swipe date?</you>
+            <they>Yeah. Not even sure why I signed up. To be honest, I’m just here cause some frat boys are throwing a party at my dorm and I’m not feeling like getting puked on.</they>
+            <you>Glad to be your distraction. I’ll try my best to entertain.</you>
+			<they>(laughs) Sorry, it’s not because of you. You seem ok.</they>
+			<they>(She drops her gaze in her coffee. Awkward silence fills the room)</they>
             <question>
-                <they>Cats?</they>
+                <they>Guess I should ask questions as well. How about you? Are you a party animal?</they>
                 <answerRight>
-                    <you>YES</you>
-                    <they>Yeah, cats are awesome</they>
+                    <you>Not at all. Loud music gives me a headache and I can't hear myself think, never mind hear anyone else talk to me.</you>
+                    <they>I feel the same way.</they>
                 </answerRight>
                 <answerWrong>
-                    <you>I guess?</you>
-                    <they>I don't think this is gonna work out if you don't love cats</they>
+                    <you>I fancy social gatherings and sparkling wine, but don’t need it every week.</you>
+                    <they>Sorry, I shouldn’t waste your time then. I think I’ll just stay at a friend's place tonight.</they>
                 </answerWrong>
                 <answerWrong>
-                    <you>No, I like dogs more</you>
-                    <they>What's wrong with you??</they>
+                    <you>Hell yeah, I’m a weekend warrior!</you>
+                    <they>Sorry, not the type at all. Think I’ll just stay at a friend's place tonight.</they>
                 </answerWrong>
            </question>
-            <they>Yeah, cats are awesome</they>
-            <you>Sure agree, friend</you>
-            <they>But lets be sure</they>
+            <they>These guys blow their brains out with alcohol and whatever pills. Hope they don’t throw the coffee maker out the window like last time.</they>
+			<they>Dorm administration got a fancy new one for us and it’s the only thing keeping me alive in that hellhole.</they>
+			<they>Somehow people have gotten into their heads that partying is the pinnacle of entertainment. I’d rather get somewhere in life.</they> 
+            <you>Totally understand. What are your plans?</you>
+            <they>Getting a PhD and doing research for the good of humanity.</they>
             <question>
-                <they>Cats?</they>
+                <they>You?</they>
                 <answerRight>
-                    <you>YES</you>
-                    <they>Yeah, cats are awesome</they>
+                    <you>I wanna get into med school. My parents are doctors as well.</you>
+                    <they>I see, having that helper syndrome as well. You should be studying though!</they>
                 </answerRight>
                 <answerWrong>
-                    <you>I guess?</you>
-                    <they>I don't think this is gonna work out if you don't love cats</they>
+                    <you>One day I’ll buy a food truck and travel around Asia.</you>
+                    <they>Sorry, not into that millennial stuff. Hey, I think I'm actually gonna head out now.</they>
                 </answerWrong>
                 <answerWrong>
-                    <you>No, I like dogs more</you>
-                    <they>What's wrong with you??</they>
+                    <you>I’m saving up to quit my job and be an indie game developer.</you>
+                    <they>(stares at her phone) Oh shit!! My friend was just involved in an accident, sorry, gotta go help her!!</they>
                 </answerWrong>
             </question>
-            <they>YOU WIN MY HEART</they>
-            <they>Lets go to my place</they>
-            <you>Sure, I guess</you>
+			<question>
+			<they>What are you looking for on swipe?</they>
+                <answerRight>
+                    <you>A little break, a nice conversation and a good coffee.</you>
+                    <they>To be honest, the coffee here is shit. Let’s go back to my place.</they>
+                </answerRight>
+                <answerWrong>
+                    <you>I read this thing in Cosmopolitan and really wanna try it!</you>
+                    <they>Ugh, that's weird. Sorry, but I think I'll just stay at a friends place tonight.</they>
+                </answerWrong>
+                <answerWrong>
+                    <you>I’m looking for a flat.</you>
+                    <they>Sorry, can't help with that. I think I'm actually heading out now. Thanks for the coffee!</they>
+                </answerWrong>    	
         </dialogue>
     </person>
 	<person>
         <id>satanist</id>
         <name>Lucious</name>
         <bio>Let me be your dungeon master ;-)</bio>
-        <furnitureComment>What a nice limited edition dog poster</furnitureComment>
+        <furnitureComment>A St. Andrew's Cross? Is this guy for real?</furnitureComment>
         <dialogue>
             <they>Hello</they>
             <you>Hello!</you>
@@ -145,8 +159,8 @@
 	<person>
         <id>dj</id>
         <name>Maze</name>
-        <bio>Check out my soundcloud at DJ MAZE - set every Friday and Saturday at The VOID</bio>
-        <furnitureComment>What a nice limited edition dog poster</furnitureComment>
+        <bio>Check out my soundcloud at DJ MAZE - set every Friday and Saturday at THE VOID Kreuzberg</bio>
+        <furnitureComment>Wow! This guy has a Native Instruments Traktor S8!</furnitureComment>
         <dialogue>
             <they>Hello</they>
             <you>Hello!</you>

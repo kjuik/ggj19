@@ -7,5 +7,6 @@ namespace Data
     {
         public Sprite Photo;
         public Sprite DatingCharacter;
+        public Color NameTextColor;
     }
 }

@@ -30,12 +30,16 @@ public class DiscussionController : MonoBehaviour {
 
     public void Next() 
     {
-        currentDialogueNode++;
-
-        if (currentDialogueNode < ChosenPerson.Dialogue.Count)
-            UpdateDialogue();
-        else
-            FadeInOut.Instance.FadeOut(ShowLineBeforeTheft);
+        var scroller = dialogueText.GetComponent<TextScrolling>();
+        if (scroller.isScrolling)
+            scroller.SkipScrolling();
+        else {
+            currentDialogueNode++;
+            if (currentDialogueNode < ChosenPerson.Dialogue.Count)
+                UpdateDialogue();
+            else
+                FadeInOut.Instance.FadeOut(ShowLineBeforeTheft);
+        }
     }
 
     void UpdateDialogue() {
@@ -58,8 +62,16 @@ public class DiscussionController : MonoBehaviour {
     }
 
     void UpdateLineText(DialogueLine dialogueLine) {
-        nameText.text = dialogueLine.Speaker == Speaker.They ? ChosenPerson.Name : "You";
+        if (dialogueLine.Speaker == Speaker.They) {
+            nameText.text = ChosenPerson.Name;
+            nameText.color = ChosenPerson.MetaData.NameTextColor;
+        } else {
+            nameText.text = "You";
+            nameText.color = Color.black;
+        }
+
         dialogueText.text = dialogueLine.Text;
+        dialogueText.GetComponent<TextScrolling>().Scroll();
     }
 
     void ShowQuestion(DialogueQuestion dialogueQuestion) {

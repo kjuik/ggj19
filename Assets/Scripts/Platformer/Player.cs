@@ -5,7 +5,7 @@ using UnityUtilities;
 
 namespace Platformer
 {
-    public class Player : MonoBehaviour
+    public class Player : SingletonMonoBehaviour<Player>
     {
         [SerializeField] float walkingSpeed = 10;
         [SerializeField] float jumpImpulse;
@@ -130,6 +130,11 @@ namespace Platformer
         {
             var trigger = other.GetComponent<Trigger>();
             trigger.Execute();
+        }
+
+        public void Bounce(float bounceImpulse)
+        {
+            velocity.y = bounceImpulse;
         }
     }
 }

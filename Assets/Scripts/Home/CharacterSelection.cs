@@ -54,6 +54,7 @@ public class CharacterSelection : MonoBehaviour
         Name.text = DataManager.Instance.ChosenPerson.Name;
         Description.text = DataManager.Instance.ChosenPerson.Bio;
         Comment.text = DataManager.Instance.ChosenPerson.FurnitureComment;
+        Comment.GetComponent<TextScrolling>().Scroll();
     }
 
     private void EndGame()

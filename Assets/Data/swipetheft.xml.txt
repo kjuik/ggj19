@@ -73,10 +73,12 @@
         <bio>Engineering student at TU. Coffee addict, book nerd, grammar nazi. Awkward as fuck - hate clubs and small talk. NOT looking for hookups.</bio>
         <furnitureComment>A coffee maker 3000? Damn. I could never afford to drop that kind of money for my morning latte.</furnitureComment>
         <dialogue>
-            <you>…so, is this your first swipe date?</you>
-            <they>Yeah. Not even sure why I signed up. To be honest, I’m just here cause some frat boys are throwing a party at my dorm and I’m not feeling like getting puked on.</they>
+			<you>...so, you look quite different from your pic on simder...</you>
+			<they>(laughs) Yeah, I know. Actually my friends made me sign up and take that picture. Not even sure why I still have that account.</they>
+            <you>Yet here we are! Is this your first simder date?</you>
+            <they>Yeah. To be honest, I’m just here cause some frat boys are throwing a party at my dorm and I’m not feeling like getting puked on.</they>
             <you>Glad to be your distraction. I’ll try my best to entertain.</you>
-			<they>(laughs) Sorry, it’s not because of you. You seem ok.</they>
+			<they>(laughs) Sorry, it’s not because of you. You actually seem... ok.</they>
 			<they>(She drops her gaze in her coffee. Awkward silence fills the room)</they>
             <question>
                 <they>Guess I should ask questions as well. How about you? Are you a party animal?</they>
@@ -94,7 +96,7 @@
                 </answerWrong>
            </question>
             <they>These guys blow their brains out with alcohol and whatever pills. Hope they don’t throw the coffee maker out the window like last time.</they>
-			<they>Dorm administration got a fancy new one for us and it’s the only thing keeping me alive in that hellhole.</they>
+			<they>Dorm administration got a fancy new one for us and it’s the only thing keeping me alive in that hellhole. I spend all my money on it.</they>
 			<they>Somehow people have gotten into their heads that partying is the pinnacle of entertainment. I’d rather get somewhere in life.</they> 
             <you>Totally understand. What are your plans?</you>
             <they>Getting a PhD and doing research for the good of humanity.</they>
@@ -110,11 +112,12 @@
                 </answerWrong>
                 <answerWrong>
                     <you>I’m saving up to quit my job and be an indie game developer.</you>
-                    <they>(stares at her phone) Oh shit!! My friend was just involved in an accident, sorry, gotta go help her!!</they>
+                    <they>Mmh.(scrolls through her phone)</they>
+					<they>Oh shit!! My friend was just involved in an accident, sorry, gotta go help her!!</they>
                 </answerWrong>
             </question>
 			<question>
-				<they>What are you looking for on swipe?</they>
+				<they>What are you looking for on simder?</they>
                 <answerRight>
                     <you>A little break, a nice conversation and a good coffee.</you>
                     <they>To be honest, the coffee here is shit. Let’s go back to my place.</they>
@@ -136,16 +139,10 @@
         <bio>Let me be your dungeon master ;-)</bio>
         <furnitureComment>A St. Andrew's Cross? Is this guy for real?</furnitureComment>
         <dialogue>
-            <they>Hello</they>
-            <you>Hello!</you>
-            <they>I'm Lucious</they>
-            <you>I know</you>
+            <you>...so, if I may ask: is Lucious your real name?</you>
+			<they>It's my dungeon name.</they>
             <question>
-                <they>Cats?</they>
-                <answerRight>
-                    <you>YES</you>
-                    <they>Yeah, cats are awesome</they>
-                </answerRight>
+                <they>Do you like cats?</they>
                 <answerWrong>
                     <you>I guess?</you>
                     <they>I don't think this is gonna work out if you don't love cats</they>
@@ -154,6 +151,10 @@
                     <you>No, I like dogs more</you>
                     <they>What's wrong with you??</they>
                 </answerWrong>
+				<answerRight>
+                    <you>YES! In fact, I adore them.</you>
+                    <they>Yeah, cats are awesome</they>
+                </answerRight>
             </question>
             <they>Yeah, cats are awesome</they>
             <you>Sure agree, friend</you>
@@ -181,49 +182,68 @@
 	<person>
         <id>dj</id>
         <name>Maze</name>
-        <bio>Check out my soundcloud at DJ MAZE - set every Friday and Saturday at THE VOID Kreuzberg</bio>
+        <bio>Check out my soundcloud at DJ MAZE - set every Friday and Saturday at WONDROUS!</bio>
         <furnitureComment>Wow! This guy has a Native Instruments Traktor S8!</furnitureComment>
         <dialogue>
-            <they>Hello</they>
-            <you>Hello!</you>
-            <they>I'm Maze</they>
-            <you>I know</you>
+			<you>...by the way, I really like your jacket. It's so shiny and sparkly.</you>
+			<they>(smiles) Thanks! I like your style, too.</they>
             <question>
-                <they>Cats?</they>
+                <they>So, I'm wondering - what's your favorite club in Berlin?</they>
+                <answerWrong>
+                    <you>Berghain. It's always a wet and wild ride.</you>
+                    <they>So pretentious. They let you in? Sorry, I really don't like shutting people out. But if you're that kind of person...</they>
+					<they>I gotta shut you out. Maze out!</they>
+                </answerWrong>
+                <answerWrong>
+                    <you>Matrix. I think they provide something for every taste.</you>
+                    <they>Well yeah, but what a tourist trap! It's like when people say they listen to "everything"...</they>
+					<they>but they only mean the radio. Maze out!</they>
+                </answerWrong>
+				<answerRight>
+                    <you>Wondrous. It's a musical wonderland of magical fantasy.</you>
+                    <they>Are you for real? I'm playing sets there almost every week!</they>
+                </answerRight>
+            </question>
+            <question>
+                <they>Is that why you matched me? It's actually in my simder bio!</they>
                 <answerRight>
-                    <you>YES</you>
-                    <they>Yeah, cats are awesome</they>
+                    <you>Yeah, but I don't care so much about it. You're just kinda cute.</you>
+                    <they>Aw, how sweet. You're making me feel fabulous.</they>
                 </answerRight>
                 <answerWrong>
-                    <you>I guess?</you>
-                    <they>I don't think this is gonna work out if you don't love cats</they>
+                    <you>Yeah, I would make a great +1 for guest lists, red carpets and stuff like that!</you>
+                    <they>Boo! I don't like people who invite themselves to fame. Maze out!</they>
                 </answerWrong>
                 <answerWrong>
-                    <you>No, I like dogs more</you>
-                    <they>What's wrong with you??</they>
+                    <you>I didn't know, really! I never read those.</you>
+                    <they>So you only look at the pics? How superficial. Sorry, I'm looking for meaningful connections here.</they>
+					<they>Maze out!</they>
                 </answerWrong>
             </question>
-            <they>Yeah, cats are awesome</they>
-            <you>Sure agree, friend</you>
-            <they>But lets be sure</they>
-            <question>
-                <they>Cats?</they>
-                <answerRight>
-                    <you>YES</you>
-                    <they>Yeah, cats are awesome</they>
+			<you>That's my job here! So how does life as a nightowl work? I'd love to see you work on a set. I guess this is one of your rare appearances in daylight.</you>
+			<they>(laughs) Well, I live right above Wondrous so yeah, if I don't have other gigs I usually stay in that area and work at home all day long. Love the club crowds at night.</they>
+			<you>Here's a question. If given a choice to play a song you know will make the crowd go crazy, or play a song you like that will get a lukewarm reaction, which do you play?</you>
+			<they>Club guests always go first. If they're having a good time, I feel all fuzzy inside.</they>
+			<question>
+				<they>Any projects you're working on that make you happy?</they>
+                <answerWrong>
+                    <you>I'm not really the creative type. I guess that's why I find these things fascinating. I'm all about family and friends.</you>
+                    <they>That's cool!</they>
+					<they>(he checks his watch.)</they>
+					<they>Wow, it's quite late already. I gotta go work as I have a gig tonight. You should come to my gig!</they>
+                </answerWrong>
+				<answerRight>
+                    <you>I'm doing this indie game developer thing.</you>
+                    <they>Wow, good for you! It's all about creating something, right? That creative process really makes me feel at home.</they>
+					<they>(he smiles.)</they>
+					<they>You wanna come to my place and check out a new track I'm working on? And you gotta show me your project!</they>
                 </answerRight>
-                <answerWrong>
-                    <you>I guess?</you>
-                    <they>I don't think this is gonna work out if you don't love cats</they>
+				 <answerWrong>
+                    <you>I love going on heists. Just kidding.</you>
+                    <they>(he stares at you, his face unchanged.)</they>
+					<they>I don't think you should joke about things like that. Anyway, I just realized I forgot to lock my door, so I'm gonna head home now. See you at Wondrous!</they>
                 </answerWrong>
-                <answerWrong>
-                    <you>No, I like dogs more</you>
-                    <they>What's wrong with you??</they>
-                </answerWrong>
-            </question>
-            <they>YOU WIN MY HEART</they>
-            <they>Lets go to my place</they>
-            <you>Sure, I guess</you>
+			</question>
         </dialogue>
     </person>	 
 </people>

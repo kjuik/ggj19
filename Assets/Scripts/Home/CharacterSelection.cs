@@ -9,7 +9,13 @@ public class CharacterSelection : MonoBehaviour
     [SerializeField] private Text Description;
     [SerializeField] private Text Comment;
 
-    private void Start() => Refresh();
+    private void Start()
+    {
+        if (DataManager.Instance.ChosenPerson.Status != PersonStatus.Available)
+            DataManager.Instance.ChooseNextAvailablePerson();
+
+        Refresh();
+    }
 
     public void Next()
     {

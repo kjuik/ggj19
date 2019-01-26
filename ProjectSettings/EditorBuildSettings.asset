@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Date.unity
     guid: 66bc518ca091570499bafeaa2cf81578
+  - enabled: 1
+    path: Assets/Scenes/Theft.unity
+    guid: 911a70e70f315334d9aa731494eb66af
   m_configObjects: {}

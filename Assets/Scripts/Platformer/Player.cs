@@ -27,9 +27,15 @@ namespace Platformer
         
         TheftManager theftManager;
 
+        Animator animator;
+        //readonly int PropertyWalking = Animator.StringToHash("walking");
+        readonly int PropertyWalkingSpeed = Animator.StringToHash("walkingSpeed");
+
         void Awake()
         {
             theftManager = TheftManager.Instance;
+
+            animator = GetComponent<Animator>();
             
             //box = GetComponent<BoxCollider2D>();
             characterController2D = GetComponent<CharacterController2D>();
@@ -50,6 +56,12 @@ namespace Platformer
             {
                 velocity.y = 0;
             }
+
+            var isWalkingLeft = (velocity.x < 0) && !characterController2D.collisionState.left;
+            var isWalkingRight = (velocity.x > 0) && !characterController2D.collisionState.right;
+            var isWalking = characterController2D.isGrounded && (isWalkingLeft || isWalkingRight);
+            //animator.SetBool(PropertyWalking, isWalking);
+            animator.SetFloat(PropertyWalkingSpeed, isWalking ? Mathf.Abs(velocity.x) : 0f);
 
             /*
             TryMoveOneAxis(velocity.x * Time.deltaTime, 0);
@@ -124,6 +136,11 @@ namespace Platformer
             }
 
             cameraOffset.SetPosition(x: transform.position.x);
+
+            if ((velocity.x != 0) && Mathf.Sign(velocity.x) != Mathf.Sign(transform.localScale.x))
+            {
+                transform.SetLocalScale(x: Mathf.Sign(velocity.x));
+            }
         }
         
         void OnTriggerEnter2D(Collider2D other)

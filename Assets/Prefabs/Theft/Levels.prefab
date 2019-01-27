@@ -451,7 +451,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 0}
-  gameOverMessage: 
+  gameOverMessage: Ah! You were caught in the flicker of a flaming light! Karen throws
+    you out immediately.
 --- !u!50 &6551862545473802510
 Rigidbody2D:
   serializedVersion: 4
@@ -895,7 +896,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 0}
-  gameOverMessage: 
+  gameOverMessage: Ah! You were caught in the flicker of a flaming light! Karen throws
+    you out immediately.
 --- !u!50 &6222403132577318781
 Rigidbody2D:
   serializedVersion: 4
@@ -2374,7 +2376,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 0}
-  gameOverMessage: 
+  gameOverMessage: Ah! You were caught in the flicker of a flaming light! Karen throws
+    you out immediately.
 --- !u!50 &4346342066265782184
 Rigidbody2D:
   serializedVersion: 4
@@ -2581,7 +2584,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 0}
-  gameOverMessage: 
+  gameOverMessage: Ah! You were caught in the flicker of a flaming light! Karen throws
+    you out immediately.
 --- !u!1 &2820588170674431780
 GameObject:
   m_ObjectHideFlags: 0

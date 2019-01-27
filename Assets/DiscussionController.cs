@@ -96,9 +96,11 @@ public class DiscussionController : MonoBehaviour {
         if (dialogueLine.Speaker == Speaker.They) {
             nameText.text = ChosenPerson.Name;
             nameText.color = ChosenPerson.MetaData.NameTextColor;
+            dialogueText.color = ChosenPerson.MetaData.NameTextColor;
         } else {
             nameText.text = "You";
             nameText.color = Color.black;
+            dialogueText.color = Color.black;
         }
 
         character.sprite = ChosenPerson.MetaData.Expressions

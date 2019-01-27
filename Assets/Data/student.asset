@@ -28,6 +28,6 @@ MonoBehaviour:
     key: smile
   - image: {fileID: 21300000, guid: 250d5119eddc0463298ecd1ac3d598fc, type: 3}
     key: laugh
-  NameTextColor: {r: 0, g: 0.038665097, b: 0.8584906, a: 1}
+  NameTextColor: {r: 0.027634379, g: 0.053878926, b: 0.6509434, a: 1}
   StealableCarryingSprite: {fileID: 21300006, guid: 3507c6aefc67bfc428d6f86229d0f889,
     type: 3}

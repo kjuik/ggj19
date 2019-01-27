@@ -98,7 +98,7 @@ public class DiscussionController : MonoBehaviour {
             nameText.color = ChosenPerson.MetaData.NameTextColor;
             dialogueText.color = ChosenPerson.MetaData.NameTextColor;
         } else {
-            nameText.text = "You";
+            nameText.text = DataManager.Instance.PlayerName;
             nameText.color = Color.black;
             dialogueText.color = Color.black;
         }

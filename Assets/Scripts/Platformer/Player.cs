@@ -41,6 +41,8 @@ namespace Platformer
             
             //box = GetComponent<BoxCollider2D>();
             characterController2D = GetComponent<CharacterController2D>();
+
+            carryingObjectObject.SetActive(false);
         }
 
         void Start()

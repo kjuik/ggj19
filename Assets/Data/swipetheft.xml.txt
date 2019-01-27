@@ -6,8 +6,8 @@
         <furnitureComment>Is that a body pillow? Girl must be super lonely...</furnitureComment>
         <theftComment>Time to steal that body pillow!</theftComment>
         <dialogue>
+			<you>(You take Kiki to your favorite cafe. Smalltalk is going well.)</you>
             <question>
-				<you>(You take Kiki to your favorite cafe. Smalltalk is going well.)</you>
                 <they>...I just have to ask right away. What’s your favorite Anime???</they>
                 <answerRight>
                     <you>I’m really into Makoto Shinkai’s stuff, you know, before he got all famous and shit.</you>

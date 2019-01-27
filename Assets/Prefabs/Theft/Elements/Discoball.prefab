@@ -131,5 +131,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 0}
-  gameOverMessage: You hit one of Maze's fabulous disco balls! He wakes up and kicks
+  gameOverMessage: You hit one of the fabulous disco balls! Maze wakes up and kicks
     you out.

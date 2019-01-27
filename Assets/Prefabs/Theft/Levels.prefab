@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offsetX: 16
-  speed: 0.3
+  speed: 0.27
 --- !u!1 &904143626475239881
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,7 +997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offsetX: 18
-  speed: 0.45
+  speed: 0.32
 --- !u!50 &2680381487209400648
 Rigidbody2D:
   serializedVersion: 4
@@ -1671,7 +1671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offsetX: 18
-  speed: 0.35
+  speed: 0.33
 --- !u!50 &8847393116860334715
 Rigidbody2D:
   serializedVersion: 4
@@ -1803,7 +1803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offsetX: -2.8
-  speed: 0.3
+  speed: 0.25
 --- !u!50 &7007523255174809437
 Rigidbody2D:
   serializedVersion: 4
@@ -2024,7 +2024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78cd8598379d476c90af29421d79ffb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetX: -0.7
+  offsetX: -0.68
   speed: 0.3
 --- !u!50 &6343151366081047309
 Rigidbody2D:
@@ -2249,7 +2249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offsetX: 17
-  speed: 0.4
+  speed: 0.36
 --- !u!50 &7086763649989782548
 Rigidbody2D:
   serializedVersion: 4
@@ -3461,6 +3461,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993668863317164728, guid: 1ffbb64db5b47ac42b8c916bc4882b8a,
+        type: 3}
+      propertyPath: gameOverMessage
+      value: A giant skull means an unfortunate death.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ffbb64db5b47ac42b8c916bc4882b8a, type: 3}
@@ -4996,7 +5001,7 @@ PrefabInstance:
     - target: {fileID: 5618598956866351558, guid: 5ed58ffc6c139af4eae0e0a75798237a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.95
+      value: 0.97
       objectReference: {fileID: 0}
     - target: {fileID: 5618598956866351558, guid: 5ed58ffc6c139af4eae0e0a75798237a,
         type: 3}
@@ -9509,7 +9514,7 @@ PrefabInstance:
     - target: {fileID: 4993668863317164728, guid: 1ffbb64db5b47ac42b8c916bc4882b8a,
         type: 3}
       propertyPath: gameOverMessage
-      value: Your brain was eaten by a flying skull! Back to mindless dating.
+      value: Your brain was eaten by a flying skull! Back to mindless dating...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ffbb64db5b47ac42b8c916bc4882b8a, type: 3}
@@ -12421,7 +12426,7 @@ PrefabInstance:
     - target: {fileID: 8160081396589826121, guid: fca9c565ffb5b434c88bc92aaed603e8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.62
+      value: 1.64
       objectReference: {fileID: 0}
     - target: {fileID: 8160081396589826121, guid: fca9c565ffb5b434c88bc92aaed603e8,
         type: 3}
@@ -12537,7 +12542,7 @@ PrefabInstance:
     - target: {fileID: 5618598956866351558, guid: 5ed58ffc6c139af4eae0e0a75798237a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.56
+      value: 1.58
       objectReference: {fileID: 0}
     - target: {fileID: 5618598956866351558, guid: 5ed58ffc6c139af4eae0e0a75798237a,
         type: 3}
@@ -13614,12 +13619,12 @@ PrefabInstance:
     - target: {fileID: 8160081396589826121, guid: fca9c565ffb5b434c88bc92aaed603e8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.96
+      value: -1.98
       objectReference: {fileID: 0}
     - target: {fileID: 8160081396589826121, guid: fca9c565ffb5b434c88bc92aaed603e8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.01
+      value: 1.03
       objectReference: {fileID: 0}
     - target: {fileID: 8160081396589826121, guid: fca9c565ffb5b434c88bc92aaed603e8,
         type: 3}
@@ -14776,7 +14781,7 @@ PrefabInstance:
     - target: {fileID: 1385563116610370885, guid: 29e6ae3325d10e242a3b4ed25c967056,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.7999997
+      value: -6.8
       objectReference: {fileID: 0}
     - target: {fileID: 1385563116610370885, guid: 29e6ae3325d10e242a3b4ed25c967056,
         type: 3}
@@ -16942,7 +16947,7 @@ PrefabInstance:
     - target: {fileID: 1385563116610370885, guid: 29e6ae3325d10e242a3b4ed25c967056,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.209999
+      value: -8.21
       objectReference: {fileID: 0}
     - target: {fileID: 1385563116610370885, guid: 29e6ae3325d10e242a3b4ed25c967056,
         type: 3}
@@ -17777,7 +17782,7 @@ PrefabInstance:
     - target: {fileID: 4993668863317164728, guid: 1ffbb64db5b47ac42b8c916bc4882b8a,
         type: 3}
       propertyPath: gameOverMessage
-      value: Your brain was eaten by a flying skull! Back to mindless dating.
+      value: Your brain was eaten by a flying skull! Back to mindless dating...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ffbb64db5b47ac42b8c916bc4882b8a, type: 3}
@@ -19436,6 +19441,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 4993668863317164728, guid: 1ffbb64db5b47ac42b8c916bc4882b8a,
+        type: 3}
+      propertyPath: gameOverMessage
+      value: A giant skull means an unfortunate death.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ffbb64db5b47ac42b8c916bc4882b8a, type: 3}
 --- !u!4 &8059495135114423559 stripped
@@ -20387,7 +20397,7 @@ PrefabInstance:
     - target: {fileID: 4993668863317164728, guid: 1ffbb64db5b47ac42b8c916bc4882b8a,
         type: 3}
       propertyPath: gameOverMessage
-      value: Your brain was eaten by a flying skull! Back to mindless dating.
+      value: Your brain was eaten by a flying skull! Back to mindless dating...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ffbb64db5b47ac42b8c916bc4882b8a, type: 3}
@@ -20423,7 +20433,7 @@ PrefabInstance:
     - target: {fileID: 1061361564823374837, guid: cf01ee86068bff64d84e7d42125a7ab0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.565
+      value: 3.56
       objectReference: {fileID: 0}
     - target: {fileID: 1061361564823374837, guid: cf01ee86068bff64d84e7d42125a7ab0,
         type: 3}
@@ -20549,7 +20559,7 @@ PrefabInstance:
     - target: {fileID: 1061361564823374837, guid: cf01ee86068bff64d84e7d42125a7ab0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.331
+      value: 3.33
       objectReference: {fileID: 0}
     - target: {fileID: 1061361564823374837, guid: cf01ee86068bff64d84e7d42125a7ab0,
         type: 3}

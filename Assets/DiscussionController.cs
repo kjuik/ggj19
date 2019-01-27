@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Data;
@@ -139,12 +140,19 @@ public class DiscussionController : MonoBehaviour {
         IfNotScrolling(() => FadeInOut.Instance.FadeOut(() => SceneManager.LoadScene("Home")));
     }
 
-    public void GoToTheft() {
+    void GoToTheft() {
         SceneManager.LoadScene("Theft");
     }
     
     void ShowLineBeforeTheft() {
-        lineBeforeTheft.text = lineBeforeTheftText;
         lineBeforeTheft.gameObject.SetActive(true);
+        lineBeforeTheft.text = lineBeforeTheftText + '\n' + '\n' + ChosenPerson.TheftComment;
+        lineBeforeTheft.GetComponent<TextScrolling>().Scroll();
+        lineBeforeTheft.GetComponent<TextScrolling>().onScrollingDone += () => StartCoroutine(TriggerGoToTheft());
+    }
+
+    IEnumerator TriggerGoToTheft() {
+        yield return new WaitForSeconds(3);
+        GoToTheft();
     }
 }

@@ -13,6 +13,7 @@ namespace Data
         public string Name;
         public string Bio;
         public string FurnitureComment;
+        public string TheftComment;
         public PersonMetaData MetaData;
         public List<DialogueBlock> Dialogue = new List<DialogueBlock>();
 
@@ -24,6 +25,7 @@ namespace Data
             Name = personElement.GetChildValue("name");
             Bio = personElement.GetChildValue("bio");
             FurnitureComment = personElement.GetChildValue("furnitureComment");
+            TheftComment = personElement.GetChildValue("theftComment");
 
             if (!personMetaDataById.TryGetValue(Id, out MetaData))
             {

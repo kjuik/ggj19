@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,7 @@ public class TextScrolling : MonoBehaviour
     Text text;
     string fullText;
     public bool isScrolling;
+    public event Action onScrollingDone;
 
     void Awake() {
         text = GetComponent<Text>();
@@ -45,13 +47,17 @@ public class TextScrolling : MonoBehaviour
 
             text.text = currentText + startTransparentTag + remainingText + endTransparentTag;
         }
-
-        isScrolling = false;
+        OnScrollEnd();
     }
 
     public void SkipScrolling() {
         StopAllCoroutines();
         text.text = fullText;
+        OnScrollEnd();
+    }
+
+    void OnScrollEnd() {
         isScrolling = false;
+        onScrollingDone?.Invoke();
     }
 }

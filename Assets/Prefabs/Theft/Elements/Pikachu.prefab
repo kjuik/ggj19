@@ -121,8 +121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: 3456495958ef6fa40af846f790f9cf4c, type: 3}
-  gameOverMessage: Pika-pika! You got shocked and woke up Kiki. You shamefully return
-    the Bodypillow.
 --- !u!1 &6142152155932456641
 GameObject:
   m_ObjectHideFlags: 0
@@ -4821,3 +4819,5 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+  gameOverMessage: Hey!! What are you doing getting shocked by my pikas? Give me back
+    my bodypillow!

@@ -15,12 +15,17 @@ namespace Platformer
         [SerializeField] bool immediatelyStopUpwardMotionOnJumpRelease;
         [SerializeField] Transform cameraOffset;
         [SerializeField] AudioClip jumpSfx;
+        [SerializeField] AudioSource[] steps;
+        [SerializeField] float stepSpeed = 0.5f;
 
         [SerializeField] GameObject carryingObjectObject;
         //[SerializeField] LayerMask collisionLayerMask;
         
         //BoxCollider2D box;
         CharacterController2D characterController2D;
+
+        int lastStepIndex;
+        float accumulatedStepIndex;
         
         //RaycastHit2D[] boxcastResultsSingle = new RaycastHit2D[1];
 
@@ -70,8 +75,16 @@ namespace Platformer
             var isWalkingLeft = (velocity.x < 0) && !characterController2D.collisionState.left;
             var isWalkingRight = (velocity.x > 0) && !characterController2D.collisionState.right;
             var isWalking = characterController2D.isGrounded && (isWalkingLeft || isWalkingRight);
+            var walkingDistance = isWalking ? Mathf.Abs(velocity.x) : 0f;
             //animator.SetBool(PropertyWalking, isWalking);
-            animator.SetFloat(PropertyWalkingSpeed, isWalking ? Mathf.Abs(velocity.x) : 0f);
+            animator.SetFloat(PropertyWalkingSpeed, walkingDistance);
+
+            accumulatedStepIndex = (accumulatedStepIndex + walkingDistance * stepSpeed) % 2;
+            if ((int) accumulatedStepIndex != lastStepIndex)
+            {
+                lastStepIndex = (int) accumulatedStepIndex;
+                steps[lastStepIndex].Play();
+            }
 
             /*
             TryMoveOneAxis(velocity.x * Time.deltaTime, 0);

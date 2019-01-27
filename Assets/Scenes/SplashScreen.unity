@@ -664,3 +664,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 139b23f7009643a41955e8342345c601, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneToLoad: PlayerCustomization

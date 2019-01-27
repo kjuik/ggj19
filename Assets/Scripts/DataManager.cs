@@ -15,7 +15,8 @@ public class DataManager : PersistentSingletonMonoBehaviour<DataManager>
     public Person ChosenPerson { get; private set; }
 
     public Color SkinColor;
-    
+    public string PlayerName = "";
+
     protected override void OnPersistentSingletonAwake()
     {
         var personMetaDataById = new Dictionary<string, PersonMetaData>();

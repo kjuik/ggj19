@@ -14,12 +14,12 @@
                 <answerWrong>
                     <you>Personally more of the Overwatch fanfic type, you know.</you>
                     <they expression="pout">You sick pervert!!</they>
-					<they>(She stands up and runs away, knocking her chair over in the process. People stare at you, judging)</they>
+					<they expression="pout">(She stands up and runs away, knocking her chair over in the process. People stare at you, judging)</they>
                 </answerWrong>
                 <answerWrong>
                     <you>Naruto.</you>
                     <they expression="pout">Ugh, sorry, I don't date mainstream!!</they>
-					<they>(She gets up, knocking her chair over in the process. People stare at you, judging)</they>
+					<they expression="pout">(She gets up, knocking her chair over in the process. People stare at you, judging)</they>
                 </answerWrong>
 			</question>
 			<you>Wow, that’s awesome! You definitely gotta show me pics. Bet all those ignorant people didn’t have a clue who you were!</you>

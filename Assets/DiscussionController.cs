@@ -17,6 +17,8 @@ public class DiscussionController : MonoBehaviour {
     [SerializeField] string lineBeforeTheftText;
     int currentDialogueNode;
     bool showAnswersNext;
+    bool updateReactionLine;
+    DialogueAnswer currentAnswer;
     
     Person ChosenPerson => DataManager.Instance.ChosenPerson;
     
@@ -44,12 +46,24 @@ public class DiscussionController : MonoBehaviour {
     void UpdateDialogue() {
         if (showAnswersNext)
             ShowAnswers((DialogueQuestion)ChosenPerson.Dialogue[currentDialogueNode]);
-        else {
+        else if (updateReactionLine) {
+            if (currentAnswer.ReactionLinesOngoing)
+                UpdateReactionLine();
+        } else {
             currentDialogueNode++;
             if (currentDialogueNode < ChosenPerson.Dialogue.Count)
                 GoToNewDialogue();
             else
                 FadeInOut.Instance.FadeOut(ShowLineBeforeTheft);
+        }
+    }
+
+    void UpdateReactionLine() {
+        ShowLine(currentAnswer.NextReactionLine());
+        if (!currentAnswer.ReactionLinesOngoing) {
+            if (!currentAnswer.Correct)
+                SetUpGoHome();
+            updateReactionLine = false;
         }
     }
 
@@ -108,13 +122,16 @@ public class DiscussionController : MonoBehaviour {
     void OnAnswer(DialogueAnswer dialogueQuestionAnswer) {
         foreach (var answer in answers) 
             answer.onClick.RemoveAllListeners();
-        ShowLine(dialogueQuestionAnswer.TheirReactionLine);
-        if (dialogueQuestionAnswer.Correct)
-            next.gameObject.SetActive(true);
-        else {
-            ChosenPerson.Status = PersonStatus.Failed;
-            goHome.gameObject.SetActive(true);
-        }
+
+        updateReactionLine = true;
+        currentAnswer = dialogueQuestionAnswer;
+        UpdateDialogue();
+    }
+
+    void SetUpGoHome() {
+        next.gameObject.SetActive(false);
+        ChosenPerson.Status = PersonStatus.Failed;
+        goHome.gameObject.SetActive(true);
     }
     
     public void GoHome()

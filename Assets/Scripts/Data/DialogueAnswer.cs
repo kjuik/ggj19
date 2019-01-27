@@ -1,4 +1,6 @@
-﻿using System.Xml.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Xml.Linq;
 using DefaultNamespace;
 
 namespace Data
@@ -7,22 +9,32 @@ namespace Data
     {
         public bool Correct { get; }
         public string YourAnswerText { get; }
-        public DialogueLine TheirReactionLine { get; }
+        public bool ReactionLinesOngoing => reactionLineIndex < theirReactionLines.Count;
 
-        public DialogueAnswer(bool correct, string yourAnswerText, DialogueLine theirReactionLine)
+        int reactionLineIndex;
+        readonly List<DialogueLine> theirReactionLines;
+
+        public DialogueAnswer(bool correct, string yourAnswerText, List<DialogueLine> theirReactionLines)
         {
             Correct = correct;
             YourAnswerText = yourAnswerText;
-            TheirReactionLine = theirReactionLine;
+            this.theirReactionLines = theirReactionLines;
         }
 
-        public static DialogueAnswer Parse(XElement element)
-        {
+        public static DialogueAnswer Parse(XElement element) {
+            var responseElements = element.Elements().ToList();
+            
             return new DialogueAnswer(
                 element.Name.LocalName.Equals("answerRight"),
                 element.GetChildValue("you"),
-                DialogueLine.Parse(element.Element("they"))
+                responseElements.Select(DialogueLine.Parse).ToList().GetRange(1, responseElements.Count - 1)
             );
+        }
+        
+        public DialogueLine NextReactionLine() {
+            var res = theirReactionLines[reactionLineIndex];
+            reactionLineIndex++;
+            return res;
         }
     }
 }

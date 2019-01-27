@@ -451,8 +451,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 0}
-  gameOverMessage: Ah! You were caught in the flicker of a flaming light! Karen throws
-    you out immediately.
+  gameOverMessage: A-ha! Caught in the flicker of that light! Get the hell out of
+    here!
 --- !u!50 &6551862545473802510
 Rigidbody2D:
   serializedVersion: 4
@@ -896,8 +896,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 0}
-  gameOverMessage: Ah! You were caught in the flicker of a flaming light! Karen throws
-    you out immediately.
+  gameOverMessage: A-ha! Caught in the flicker of that light! Get the hell out of
+    here!
 --- !u!50 &6222403132577318781
 Rigidbody2D:
   serializedVersion: 4
@@ -2377,8 +2377,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 0}
-  gameOverMessage: Ah! You were caught in the flicker of a flaming light! Karen throws
-    you out immediately.
+  gameOverMessage: A-ha! Caught in the flicker of that light! Get the hell out of
+    here!
 --- !u!50 &4346342066265782184
 Rigidbody2D:
   serializedVersion: 4
@@ -2585,8 +2585,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 0}
-  gameOverMessage: Ah! You were caught in the flicker of a flaming light! Karen throws
-    you out immediately.
+  gameOverMessage: A-ha! Caught in the flicker of that light! Get the hell out of
+    here!
 --- !u!1 &2820588170674431780
 GameObject:
   m_ObjectHideFlags: 0
@@ -4138,8 +4138,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 0}
-  gameOverMessage: You ran into one of last night's party guests! The noise wakes
-    up Karen, who kicks you out immediately.
+  gameOverMessage: Hey, stop making noise and leave those guys alone! Are you stealing
+    the coffee maker? Give it back and get out!
 --- !u!50 &8217719613065275558
 Rigidbody2D:
   serializedVersion: 4
@@ -7024,6 +7024,12 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5460390252870347749, guid: fca9c565ffb5b434c88bc92aaed603e8,
+        type: 3}
+      propertyPath: gameOverMessage
+      value: That loud MEOW woke me up!  Give back the coffee maker and get the hell
+        out!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fca9c565ffb5b434c88bc92aaed603e8, type: 3}
 --- !u!1 &2837703285632767460 stripped
@@ -7800,6 +7806,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.a
       value: 0.9843137
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580903165271614971, guid: 29e6ae3325d10e242a3b4ed25c967056,
+        type: 3}
+      propertyPath: gameOverMessage
+      value: Get spooked! One of my nightguard zombies caught you! Give back the cross!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29e6ae3325d10e242a3b4ed25c967056, type: 3}
@@ -9637,6 +9648,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.a
       value: 0.9843137
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580903165271614971, guid: 29e6ae3325d10e242a3b4ed25c967056,
+        type: 3}
+      propertyPath: gameOverMessage
+      value: Get spooked! One of my nightguard zombies caught you! Give back the cross!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29e6ae3325d10e242a3b4ed25c967056, type: 3}
@@ -12268,7 +12284,7 @@ PrefabInstance:
     - target: {fileID: 4993668863317164728, guid: 1ffbb64db5b47ac42b8c916bc4882b8a,
         type: 3}
       propertyPath: gameOverMessage
-      value: Your brain was eaten by a flying skull! Back to mindless dating...
+      value: Get spooked! One of my flying skulls got you. Give back the cross!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ffbb64db5b47ac42b8c916bc4882b8a, type: 3}
@@ -14011,6 +14027,11 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 5460390252870347749, guid: fca9c565ffb5b434c88bc92aaed603e8,
+        type: 3}
+      propertyPath: gameOverMessage
+      value: Hey! What are you doing to the cats? Get out and leave my cross here!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fca9c565ffb5b434c88bc92aaed603e8, type: 3}
 --- !u!1 &1352430432830961725 stripped
@@ -15202,6 +15223,11 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 5460390252870347749, guid: fca9c565ffb5b434c88bc92aaed603e8,
+        type: 3}
+      propertyPath: gameOverMessage
+      value: Hey! What are you doing to the cats? Get out and leave my cross here!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fca9c565ffb5b434c88bc92aaed603e8, type: 3}
 --- !u!1 &7300922675723862651 stripped
@@ -16061,7 +16087,7 @@ PrefabInstance:
     - target: {fileID: 1385563116610370885, guid: 29e6ae3325d10e242a3b4ed25c967056,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.711
+      value: 1.741
       objectReference: {fileID: 0}
     - target: {fileID: 1385563116610370885, guid: 29e6ae3325d10e242a3b4ed25c967056,
         type: 3}
@@ -16152,8 +16178,8 @@ PrefabInstance:
     - target: {fileID: 3580903165271614971, guid: 29e6ae3325d10e242a3b4ed25c967056,
         type: 3}
       propertyPath: gameOverMessage
-      value: You ran into one of last night's party guests! The noise wakes up Karen,
-        who kicks you out immediately.
+      value: Hey, stop making noise and leave those guys alone! Are you stealing the
+        coffee maker? Give it back and get out!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29e6ae3325d10e242a3b4ed25c967056, type: 3}
@@ -16481,6 +16507,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Offset.y
       value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5460390252870347749, guid: fca9c565ffb5b434c88bc92aaed603e8,
+        type: 3}
+      propertyPath: gameOverMessage
+      value: Hey! What are you doing to the cats? Get out and leave my cross here!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fca9c565ffb5b434c88bc92aaed603e8, type: 3}
@@ -18234,6 +18265,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.a
       value: 0.9843137
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580903165271614971, guid: 29e6ae3325d10e242a3b4ed25c967056,
+        type: 3}
+      propertyPath: gameOverMessage
+      value: Get spooked! One of my nightguard zombies caught you! Give back the cross!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29e6ae3325d10e242a3b4ed25c967056, type: 3}
@@ -20389,7 +20425,7 @@ PrefabInstance:
     - target: {fileID: 4993668863317164728, guid: 1ffbb64db5b47ac42b8c916bc4882b8a,
         type: 3}
       propertyPath: gameOverMessage
-      value: Your brain was eaten by a flying skull! Back to mindless dating...
+      value: Get spooked! One of my flying skulls got you. Give back the cross!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ffbb64db5b47ac42b8c916bc4882b8a, type: 3}
@@ -21734,6 +21770,11 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0.9647059
       objectReference: {fileID: 0}
+    - target: {fileID: 3580903165271614971, guid: 29e6ae3325d10e242a3b4ed25c967056,
+        type: 3}
+      propertyPath: gameOverMessage
+      value: Get spooked! One of my nightguard zombies caught you! Give back the cross!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29e6ae3325d10e242a3b4ed25c967056, type: 3}
 --- !u!4 &8698590773506340756 stripped
@@ -21856,7 +21897,7 @@ PrefabInstance:
     - target: {fileID: 6726049576384266455, guid: dced09b0b9186e24fbde8667344d8100,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.173
+      value: 2.203
       objectReference: {fileID: 0}
     - target: {fileID: 6726049576384266455, guid: dced09b0b9186e24fbde8667344d8100,
         type: 3}
@@ -22717,8 +22758,8 @@ PrefabInstance:
     - target: {fileID: 3580903165271614971, guid: 29e6ae3325d10e242a3b4ed25c967056,
         type: 3}
       propertyPath: gameOverMessage
-      value: You ran into one of last night's party guests! The noise wakes up Karen,
-        who kicks you out immediately.
+      value: Hey, stop making noise and leave those guys alone! Are you stealing the
+        coffee maker? Give it back and get out!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29e6ae3325d10e242a3b4ed25c967056, type: 3}
@@ -23320,7 +23361,7 @@ PrefabInstance:
     - target: {fileID: 4993668863317164728, guid: 1ffbb64db5b47ac42b8c916bc4882b8a,
         type: 3}
       propertyPath: gameOverMessage
-      value: Your brain was eaten by a flying skull! Back to mindless dating...
+      value: Get spooked! One of my flying skulls got you. Give back the cross!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ffbb64db5b47ac42b8c916bc4882b8a, type: 3}
@@ -24421,8 +24462,8 @@ PrefabInstance:
     - target: {fileID: 3580903165271614971, guid: 29e6ae3325d10e242a3b4ed25c967056,
         type: 3}
       propertyPath: gameOverMessage
-      value: You ran into one of last night's party guests! The noise wakes up Karen,
-        who kicks you out immediately.
+      value: Hey, stop making noise and leave those guys alone! Are you stealing the
+        coffee maker? Give it back and get out!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29e6ae3325d10e242a3b4ed25c967056, type: 3}
@@ -24588,6 +24629,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.a
       value: 0.9843137
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580903165271614971, guid: 29e6ae3325d10e242a3b4ed25c967056,
+        type: 3}
+      propertyPath: gameOverMessage
+      value: Get spooked! One of my nightguard zombies caught you! Give back the cross!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29e6ae3325d10e242a3b4ed25c967056, type: 3}

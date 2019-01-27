@@ -134,7 +134,7 @@ public class DiscussionController : MonoBehaviour {
 
     void SetUpGoHome() {
         next.gameObject.SetActive(false);
-        ChosenPerson.Status = PersonStatus.Failed;
+        ChosenPerson.Status = PersonStatus.Stranger;
         goHome.gameObject.SetActive(true);
     }
     

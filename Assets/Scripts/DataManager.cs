@@ -44,13 +44,13 @@ public class DataManager : PersistentSingletonMonoBehaviour<DataManager>
 
     public void ChooseNextAvailablePerson()
     {
-        var availablePeople = People.Where(p => p.Status == PersonStatus.Available).ToList();
+        var availablePeople = People.Where(p => p.Status != PersonStatus.TheftSucceeded).ToList();
         ChosenPerson = availablePeople[(availablePeople.IndexOf(ChosenPerson) + 1) % (availablePeople.Count)];
     }
 
     public void Reset() {
         foreach (var person in People)
-            person.Status = PersonStatus.Available;
+            person.Status = PersonStatus.Stranger;
         ChosenPerson = People[0];
     }
 }

@@ -11,6 +11,6 @@ public class Stealable : MonoBehaviour
         GetComponent<Image>().enabled = 
             DataManager.Instance.People
             .Where(p => p.Id == characterDataObject.name).First()
-            .Status == PersonStatus.Succeeded;
+            .Status == PersonStatus.TheftSucceeded;
     }
 }

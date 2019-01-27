@@ -1,4 +1,4 @@
 ﻿public enum PersonStatus
 {
-    Available, Succeeded, Failed
+    Stranger, DateSucceeded, TheftSucceeded
 }

@@ -22,13 +22,13 @@ public class CharacterSelection : MonoBehaviour
 
     private void Start()
     {
-        if (DataManager.Instance.People.TrueForAll(person => person.Status != PersonStatus.Available))
+        if (DataManager.Instance.People.TrueForAll(person => person.Status == PersonStatus.TheftSucceeded))
         {
             EndGame();
         }
         else
         {
-            if (DataManager.Instance.ChosenPerson.Status != PersonStatus.Available)
+            if (DataManager.Instance.ChosenPerson.Status == PersonStatus.TheftSucceeded)
                 DataManager.Instance.ChooseNextAvailablePerson();
 
             Refresh();

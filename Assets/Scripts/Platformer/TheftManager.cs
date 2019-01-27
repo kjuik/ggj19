@@ -49,7 +49,7 @@ namespace Platformer
                 audioSource.PlayOneShot(sfx);
             }
 
-            DataManager.Instance.ChosenPerson.Status = PersonStatus.Failed;
+            DataManager.Instance.ChosenPerson.Status = PersonStatus.DateSucceeded;
             
             overlay.SetActive(true);
             playerKilledNotificationText.text = gameOverMessage;
@@ -62,7 +62,7 @@ namespace Platformer
             if (!Running)
                 return;
             
-            DataManager.Instance.ChosenPerson.Status = PersonStatus.Succeeded;
+            DataManager.Instance.ChosenPerson.Status = PersonStatus.TheftSucceeded;
             
             overlay.SetActive(true);
             playerWonNotification.SetActive(true);

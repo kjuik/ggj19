@@ -12,6 +12,7 @@ namespace Platformer
         [SerializeField] GameObject playerKilledNotification;
         [SerializeField] Text playerKilledNotificationText;
         [SerializeField] GameObject playerWonNotification;
+        [SerializeField] Text playerWonNotificationText;
         [SerializeField] float waitUntilFadeout = 1f;
         [SerializeField] Transform levelContainer;
 
@@ -65,6 +66,7 @@ namespace Platformer
             DataManager.Instance.ChosenPerson.Status = PersonStatus.TheftSucceeded;
             
             overlay.SetActive(true);
+            playerWonNotificationText.text = DataManager.Instance.ChosenPerson.MetaData.TheftSuccessMessage;
             playerWonNotification.SetActive(true);
             SwitchToHomeAfterDelay();
         }

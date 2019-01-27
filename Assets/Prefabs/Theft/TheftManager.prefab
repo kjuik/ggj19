@@ -118,7 +118,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2546343826711321693
 RectTransform:
   m_ObjectHideFlags: 0
@@ -296,6 +296,7 @@ MonoBehaviour:
   playerKilledNotification: {fileID: 2546343826999543731}
   playerKilledNotificationText: {fileID: 2546343828039093786}
   playerWonNotification: {fileID: 2546343826912876722}
+  playerWonNotificationText: {fileID: 2546343827285014567}
   waitUntilFadeout: 3
   levelContainer: {fileID: 0}
 --- !u!82 &2005332467

@@ -7,6 +7,7 @@ public class CharacterSelection : MonoBehaviour
 {
     [SerializeField] private Image Photo;
     [SerializeField] private Text Name;
+    [SerializeField] private Image DescriptionBackground;
     [SerializeField] private Text Description;
     [SerializeField] private Text Comment;
 
@@ -55,7 +56,7 @@ public class CharacterSelection : MonoBehaviour
     public void ToggleInfoOrPhoto()
     {
         Photo.gameObject.SetActive(!Photo.gameObject.activeSelf);
-        Description.gameObject.SetActive(!Description.gameObject.activeSelf);
+        DescriptionBackground.gameObject.SetActive(!DescriptionBackground.gameObject.activeSelf);
     }
 
     private void Refresh()

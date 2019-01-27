@@ -120,4 +120,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 0}
-  gameOverMessage: 
+  gameOverMessage: Get spooked! You were eaten by one of Lucious' nightguard zombies.

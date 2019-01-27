@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 8095214432468371226}
   - component: {fileID: 2600998955690851673}
   - component: {fileID: 7003641267761438317}
-  m_Layer: 10
+  - component: {fileID: 602481628180421868}
+  m_Layer: 11
   m_Name: Discoball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +91,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -106,12 +107,29 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -0.0032656938, y: 0.012582958}
-      - {x: -0.016647171, y: -0.07414517}
-      - {x: -0.086143896, y: -0.13287818}
-      - {x: -0.08385607, y: -0.21512917}
-      - {x: -0.043560937, y: -0.2588561}
-      - {x: 0.049203392, y: -0.2579062}
-      - {x: 0.06555367, y: -0.23597795}
-      - {x: 0.08439786, y: -0.19829467}
-      - {x: 0.08614393, y: -0.1340589}
-      - {x: 0.020387687, y: -0.07664177}
+      - {x: -0.008035465, y: -0.06087923}
+      - {x: -0.010349087, y: -0.08420697}
+      - {x: -0.07205564, y: -0.14663059}
+      - {x: -0.07043605, y: -0.19892395}
+      - {x: -0.021076921, y: -0.24871331}
+      - {x: 0.021951575, y: -0.24930444}
+      - {x: 0.053326435, y: -0.22832051}
+      - {x: 0.07325839, y: -0.19589588}
+      - {x: 0.073221825, y: -0.14094117}
+      - {x: 0.012605773, y: -0.085975975}
+      - {x: 0.00913353, y: -0.07289037}
+--- !u!114 &602481628180421868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6349718623126181411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e98dd16b2acc4a30bbc6d5a35db6bcdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfx: {fileID: 0}
+  gameOverMessage: You hit one of Maze's fabulous discoballs! He wakes up and kicks
+    you out.

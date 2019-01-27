@@ -4,6 +4,7 @@
         <name>Kiki</name>
         <bio>Heyyy!!! KiKi here, looking for a cute Otaku boy *.* No weirdos or cosplay requests pls... and YES, I know Death Note. Get a taste. Featured at AnimeCon 19!! ^__^</bio>
         <furnitureComment>Is that a body pillow? Girl must be super lonely...</furnitureComment>
+        <theftComment>Time to steal that body pillow!</theftComment>
         <dialogue>
             <question>
                 <they>...I just have to ask right away. What’s your favorite Anime???</they>
@@ -72,6 +73,7 @@
         <name>Karen</name>
         <bio>Engineering student at TU. Coffee addict, book nerd, grammar nazi. Awkward as fuck - hate clubs and small talk. NOT looking for hookups.</bio>
         <furnitureComment>A coffee maker 3000? Damn. I could never afford to drop that kind of money for my morning latte.</furnitureComment>
+        <theftComment>That expensive coffee maker is going to be yours!</theftComment>
         <dialogue>
 			<you>...so, you look quite different from your pic on simder...</you>
 			<they expression="laugh">(laughs) Yeah, I know. Actually my friends made me sign up and take that picture. Not even sure why I still have that account.</they>
@@ -138,6 +140,7 @@
         <name>Lucious</name>
         <bio>Let me be your dungeon master ;-)</bio>
         <furnitureComment>That cross in the back... is this guy for real?</furnitureComment>
+        <theftComment>Get your hands on that cross!</theftComment>
         <dialogue>
             <you>...so, if I may ask: is Lucious your real name?</you>
 			<they expression="smile">It's my dungeon name.</they>
@@ -208,6 +211,7 @@
         <name>Maze</name>
         <bio>Check out my soundcloud at DJ MAZE - set every Friday and Saturday at WONDROUS!</bio>
         <furnitureComment>Wow! This guy has a Native Instruments Traktor S8!</furnitureComment>
+        <theftComment>Now's your chance to steal that Native Instruments Traktor!</theftComment>
         <dialogue>
 			<you>...by the way, I really like your jacket. It's so shiny and sparkly.</you>
 			<they expression="smile">(smiles) Thanks! I like your style, too.</they>

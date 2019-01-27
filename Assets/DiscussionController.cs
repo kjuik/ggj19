@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Data;
@@ -95,9 +96,11 @@ public class DiscussionController : MonoBehaviour {
         if (dialogueLine.Speaker == Speaker.They) {
             nameText.text = ChosenPerson.Name;
             nameText.color = ChosenPerson.MetaData.NameTextColor;
+            dialogueText.color = ChosenPerson.MetaData.NameTextColor;
         } else {
             nameText.text = "You";
             nameText.color = Color.black;
+            dialogueText.color = Color.black;
         }
 
         character.sprite = ChosenPerson.MetaData.Expressions
@@ -139,12 +142,19 @@ public class DiscussionController : MonoBehaviour {
         IfNotScrolling(() => FadeInOut.Instance.FadeOut(() => SceneManager.LoadScene("Home")));
     }
 
-    public void GoToTheft() {
+    void GoToTheft() {
         SceneManager.LoadScene("Theft");
     }
     
     void ShowLineBeforeTheft() {
-        lineBeforeTheft.text = lineBeforeTheftText;
         lineBeforeTheft.gameObject.SetActive(true);
+        lineBeforeTheft.text = lineBeforeTheftText + '\n' + '\n' + ChosenPerson.TheftComment;
+        lineBeforeTheft.GetComponent<TextScrolling>().Scroll();
+        lineBeforeTheft.GetComponent<TextScrolling>().onScrollingDone += () => StartCoroutine(TriggerGoToTheft());
+    }
+
+    IEnumerator TriggerGoToTheft() {
+        yield return new WaitForSeconds(3);
+        GoToTheft();
     }
 }

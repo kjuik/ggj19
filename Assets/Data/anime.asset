@@ -28,6 +28,6 @@ MonoBehaviour:
     key: pout
   - image: {fileID: 21300000, guid: 7ed1d103fc7274f1d93489d8af752a37, type: 3}
     key: smile
-  NameTextColor: {r: 1, g: 0, b: 0.59708786, a: 1}
+  NameTextColor: {r: 0.75686276, g: 0, b: 0.4, a: 1}
   StealableCarryingSprite: {fileID: 21300000, guid: 3507c6aefc67bfc428d6f86229d0f889,
     type: 3}

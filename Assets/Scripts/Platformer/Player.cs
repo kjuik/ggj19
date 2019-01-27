@@ -43,6 +43,11 @@ namespace Platformer
             characterController2D = GetComponent<CharacterController2D>();
         }
 
+        void Start()
+        {
+            carryingObjectObject.GetComponent<SpriteRenderer>().sprite = DataManager.Instance.ChosenPerson.MetaData.StealableCarryingSprite;
+        }
+        
         void FixedUpdate()
         {
             var gravityMultiplier = 1f;

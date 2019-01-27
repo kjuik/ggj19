@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 1199381537074012646}
   - component: {fileID: 375152508579768244}
   - component: {fileID: 1525492327946422492}
-  m_Layer: 10
+  - component: {fileID: 6353748544733038118}
+  m_Layer: 11
   m_Name: Pikachu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,3 +107,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14, y: 0.15}
   m_EdgeRadius: 0
+--- !u!114 &6353748544733038118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2843977026605011540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e98dd16b2acc4a30bbc6d5a35db6bcdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

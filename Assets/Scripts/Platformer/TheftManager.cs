@@ -1,4 +1,6 @@
 ﻿using System.Collections;
+using System.Linq;
+using Data;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -9,12 +11,14 @@ namespace Platformer
     public class TheftManager : SingletonMonoBehaviour<TheftManager>
     {
         [SerializeField] GameObject overlay;
-        [SerializeField] GameObject playerKilledNotification;
-        [SerializeField] Text playerKilledNotificationText;
         [SerializeField] GameObject playerWonNotification;
         [SerializeField] Text playerWonNotificationText;
         [SerializeField] float waitUntilFadeout = 1f;
         [SerializeField] Transform levelContainer;
+        [SerializeField] GameObject dateUi;
+        [SerializeField] Text characterDialogueOnFail;
+        [SerializeField] Text characterName;
+        [SerializeField] Image characterImage;
 
         AudioSource audioSource;
 
@@ -24,7 +28,6 @@ namespace Platformer
         {
             Running = true;
             overlay.SetActive(false);
-            playerKilledNotification.SetActive(false);
             playerWonNotification.SetActive(false);
             audioSource = GetComponent<AudioSource>();
         }
@@ -50,12 +53,24 @@ namespace Platformer
                 audioSource.PlayOneShot(sfx);
             }
 
-            DataManager.Instance.ChosenPerson.Status = PersonStatus.DateSucceeded;
+            var chosenPerson = DataManager.Instance.ChosenPerson;
+            chosenPerson.Status = PersonStatus.DateSucceeded;
             
-            overlay.SetActive(true);
-            playerKilledNotificationText.text = gameOverMessage;
-            playerKilledNotification.SetActive(true);
-            SwitchToHomeAfterDelay();
+            Time.timeScale = 0;
+            Running = false;
+            SetUpCharacterReactionOnFail(gameOverMessage, chosenPerson);
+        }
+
+        void SetUpCharacterReactionOnFail(string gameOverMessage, Person chosenPerson) {
+            dateUi.SetActive(true);
+            characterDialogueOnFail.text = gameOverMessage;
+            characterName.text = chosenPerson.Name;
+            characterDialogueOnFail.color = chosenPerson.MetaData.NameTextColor;
+            characterName.color = chosenPerson.MetaData.NameTextColor;
+            characterImage.sprite =
+                chosenPerson.MetaData.Expressions.First(expression => expression.key == "unhappy").image;
+            characterDialogueOnFail.GetComponent<TextScrolling>().Scroll();
+            characterDialogueOnFail.GetComponent<TextScrolling>().onScrollingDone += SwitchToHomeAfterDelay;
         }
 
         public void ReachedExit()
@@ -78,9 +93,6 @@ namespace Platformer
 
         IEnumerator SwitchToHomeAfterDelayCoroutine()
         {
-            Time.timeScale = 0;
-            Running = false;
-            
             yield return new WaitForSecondsRealtime(waitUntilFadeout);
             
             FadeInOut.Instance.FadeOut(() =>

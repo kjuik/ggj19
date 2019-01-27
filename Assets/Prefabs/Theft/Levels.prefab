@@ -6332,7 +6332,7 @@ PrefabInstance:
     - target: {fileID: 1703026056902362619, guid: c03c761d0f47f9b4e9c032d92bebac99,
         type: 3}
       propertyPath: m_Name
-      value: Ceiling (2)
+      value: Start Wall
       objectReference: {fileID: 0}
     - target: {fileID: 1703026056902362620, guid: c03c761d0f47f9b4e9c032d92bebac99,
         type: 3}
@@ -8014,7 +8014,7 @@ PrefabInstance:
     - target: {fileID: 1703026056902362619, guid: c03c761d0f47f9b4e9c032d92bebac99,
         type: 3}
       propertyPath: m_Name
-      value: Ceiling (2)
+      value: Start Wall
       objectReference: {fileID: 0}
     - target: {fileID: 1703026056902362620, guid: c03c761d0f47f9b4e9c032d92bebac99,
         type: 3}
@@ -8090,6 +8090,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.121568635
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703026056902362621, guid: c03c761d0f47f9b4e9c032d92bebac99,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c03c761d0f47f9b4e9c032d92bebac99, type: 3}
@@ -9011,7 +9016,7 @@ PrefabInstance:
     - target: {fileID: 1703026056902362619, guid: c03c761d0f47f9b4e9c032d92bebac99,
         type: 3}
       propertyPath: m_Name
-      value: Ceiling (1)
+      value: End Wall
       objectReference: {fileID: 0}
     - target: {fileID: 1703026056902362620, guid: c03c761d0f47f9b4e9c032d92bebac99,
         type: 3}
@@ -12246,7 +12251,7 @@ PrefabInstance:
     - target: {fileID: 1703026056902362619, guid: c03c761d0f47f9b4e9c032d92bebac99,
         type: 3}
       propertyPath: m_Name
-      value: Ceiling (3)
+      value: End Wall
       objectReference: {fileID: 0}
     - target: {fileID: 1703026056902362620, guid: c03c761d0f47f9b4e9c032d92bebac99,
         type: 3}
@@ -14869,7 +14874,7 @@ PrefabInstance:
     - target: {fileID: 1703026056902362619, guid: c03c761d0f47f9b4e9c032d92bebac99,
         type: 3}
       propertyPath: m_Name
-      value: Ceiling (4)
+      value: Start Wall
       objectReference: {fileID: 0}
     - target: {fileID: 1703026056902362620, guid: c03c761d0f47f9b4e9c032d92bebac99,
         type: 3}
@@ -16091,7 +16096,7 @@ PrefabInstance:
     - target: {fileID: 1703026056902362619, guid: c03c761d0f47f9b4e9c032d92bebac99,
         type: 3}
       propertyPath: m_Name
-      value: Ceiling (3)
+      value: End Wall
       objectReference: {fileID: 0}
     - target: {fileID: 1703026056902362620, guid: c03c761d0f47f9b4e9c032d92bebac99,
         type: 3}
@@ -17294,7 +17299,7 @@ PrefabInstance:
     - target: {fileID: 1703026056902362619, guid: c03c761d0f47f9b4e9c032d92bebac99,
         type: 3}
       propertyPath: m_Name
-      value: Ceiling (3)
+      value: Start Wall
       objectReference: {fileID: 0}
     - target: {fileID: 1703026056902362620, guid: c03c761d0f47f9b4e9c032d92bebac99,
         type: 3}
@@ -19729,7 +19734,7 @@ PrefabInstance:
     - target: {fileID: 1703026056902362619, guid: c03c761d0f47f9b4e9c032d92bebac99,
         type: 3}
       propertyPath: m_Name
-      value: Ceiling (3)
+      value: End Wall
       objectReference: {fileID: 0}
     - target: {fileID: 1703026056902362620, guid: c03c761d0f47f9b4e9c032d92bebac99,
         type: 3}

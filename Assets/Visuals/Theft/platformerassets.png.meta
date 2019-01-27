@@ -4,7 +4,7 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: bookshelf
     21300002: book shelf
-    21300004: platformerassets_2
+    21300004: DJ Background
     21300006: platformerassets_3
     21300008: platformerassets_4
     21300010: platformerassets_5
@@ -20,13 +20,18 @@ TextureImporter:
     21300030: small table
     21300032: platformerassets_16
     21300034: bigger table
-    21300036: platformerassets_0
+    21300036: Satan Background
     21300038: platformerassets_15
     21300040: platformerassets_17
     21300042: big table
     21300044: platformerassets_19
     21300046: platformerassets_1
     21300048: Platform Only
+    21300050: platformerassets_2
+    21300052: platformerassets_6
+    21300054: Student Background
+    21300056: SatanNNN
+    21300058: Anime Back
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -131,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: platformerassets_0
+      name: Satan Background
       rect:
         serializedVersion: 2
         x: 1
@@ -171,12 +176,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: platformerassets_2
+      name: DJ Background
       rect:
         serializedVersion: 2
-        x: 157
+        x: 176
         y: 0
-        width: 24
+        width: 4
         height: 90
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -566,6 +571,106 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5675c9f8d62787649af2221593dafa51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformerassets_2
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 0
+        width: 1
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531a9bd13388c334f9f6058b0e018686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformerassets_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 5
+        width: 30
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a02042433f9444c9c4a8cefc217003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Student Background
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 4
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8d4f3a9e1ec0f49813cae550ee0b72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anime Back
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 4
+        height: 90
+      alignment: 9
+      pivot: {x: 0.595871, y: 0.49573925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425d4ad0c9b26f94e808ee73e57b3f5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SatanNNN
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 4
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c539127386e40d44a968ba46b53caae
       vertices: []
       indices: 
       edges: []

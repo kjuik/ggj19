@@ -37,7 +37,7 @@ public class TextScrolling : MonoBehaviour
 
         while (currentText != fullText)
         {
-            yield return new WaitForSeconds(secondsPerLetter);
+            yield return new WaitForSecondsRealtime(secondsPerLetter);
 
             currentLetterIndex++;
             currentText = fullText.Substring(0, currentLetterIndex);

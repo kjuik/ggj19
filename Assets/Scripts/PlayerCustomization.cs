@@ -8,6 +8,7 @@ public class PlayerCustomization : MonoBehaviour
 {
     [SerializeField] private List<Color> colors;
     [SerializeField] private Image playerFace;
+    [SerializeField] private Image playerHand;
 
     [SerializeField] private Button ContinueButton;
     [SerializeField] private InputField Name;
@@ -15,15 +16,20 @@ public class PlayerCustomization : MonoBehaviour
     void Start()
     {
         playerFace.color = DataManager.Instance.SkinColor;
+        playerHand.color = DataManager.Instance.SkinColor;
+
         Name.text = DataManager.Instance.PlayerName;
         OnNameUpdated();
     }
 
     public void NextColor()
     {
-        playerFace.color = colors[
+        var newColor = colors[
             (colors.IndexOf(playerFace.color) + 1) % (colors.Count)
         ];
+
+        playerFace.color = newColor;
+        playerHand.color = newColor;
     }
 
     public void OnNameUpdated()

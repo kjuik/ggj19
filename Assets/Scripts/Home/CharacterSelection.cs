@@ -13,6 +13,13 @@ public class CharacterSelection : MonoBehaviour
     [SerializeField] private List<GameObject> DeactivateOnEndGame;
     [SerializeField] private List<GameObject> ActivateOnEndGame;
 
+    [SerializeField] private Image Hand;
+
+    private void Awake()
+    {
+        Hand.color = DataManager.Instance.SkinColor;
+    }
+
     private void Start()
     {
         if (DataManager.Instance.People.TrueForAll(person => person.Status != PersonStatus.Available))

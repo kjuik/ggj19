@@ -31,3 +31,5 @@ MonoBehaviour:
   NameTextColor: {r: 0.6603774, g: 0.32502037, b: 0, a: 1}
   StealableCarryingSprite: {fileID: 21300002, guid: 3507c6aefc67bfc428d6f86229d0f889,
     type: 3}
+  TheftSuccessMessage: 'Scr-Scr-Scratch that off your list: you stole Maze''s brand
+    new Native Instruments DJ pult!'

@@ -14,6 +14,7 @@ namespace Platformer
         [SerializeField] float gravityBase = -1f;
         [SerializeField] bool immediatelyStopUpwardMotionOnJumpRelease;
         [SerializeField] Transform cameraOffset;
+        [SerializeField] AudioClip jumpSfx;
 
         [SerializeField] GameObject carryingObjectObject;
         //[SerializeField] LayerMask collisionLayerMask;
@@ -133,6 +134,7 @@ namespace Platformer
             {
                 velocity.y = jumpImpulse;
                 jumpStillPressed = true;
+                theftManager.PlaySfx(jumpSfx);
             }
 
             if (jumpStillPressed && !jumpButtonPressed)
@@ -160,7 +162,11 @@ namespace Platformer
 
         public void Bounce(float bounceImpulse)
         {
-            velocity.y = bounceImpulse;
+            if (velocity.y <= 0)
+            {
+                velocity.y = bounceImpulse;
+                theftManager.PlaySfx(jumpSfx);
+            }
         }
 
         public void UnlockCarryingObject()

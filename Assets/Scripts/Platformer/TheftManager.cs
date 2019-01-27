@@ -87,5 +87,10 @@ namespace Platformer
                 SceneManager.LoadScene("Home");
             });
         }
+
+        public void PlaySfx(AudioClip sfx)
+        {
+            audioSource.PlayOneShot(sfx);
+        }
     }
 }

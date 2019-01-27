@@ -10,6 +10,7 @@ namespace Data
         public Expression[] Expressions;
         public Color NameTextColor;
         public Sprite StealableCarryingSprite;
+        public string TheftSuccessMessage;
     }
 
     [Serializable]

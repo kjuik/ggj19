@@ -31,3 +31,5 @@ MonoBehaviour:
   NameTextColor: {r: 0.027634379, g: 0.053878926, b: 0.6509434, a: 1}
   StealableCarryingSprite: {fileID: 21300006, guid: 3507c6aefc67bfc428d6f86229d0f889,
     type: 3}
+  TheftSuccessMessage: You finally got hold of your own coffee maker 3000! It'll boost
+    your morning routine to the max.

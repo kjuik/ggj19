@@ -31,3 +31,5 @@ MonoBehaviour:
   NameTextColor: {r: 0.75686276, g: 0, b: 0.4, a: 1}
   StealableCarryingSprite: {fileID: 21300000, guid: 3507c6aefc67bfc428d6f86229d0f889,
     type: 3}
+  TheftSuccessMessage: Congratulations! You managed to steal the bodypillow from Kiki
+    and defeat loneliness once and for all.

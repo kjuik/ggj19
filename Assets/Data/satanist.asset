@@ -31,3 +31,5 @@ MonoBehaviour:
   NameTextColor: {r: 0.44761992, g: 0.01668743, b: 0.7075472, a: 1}
   StealableCarryingSprite: {fileID: 21300008, guid: 3507c6aefc67bfc428d6f86229d0f889,
     type: 3}
+  TheftSuccessMessage: You decided to steal Lucious' cross. Either you're more adventurous
+    than I thought or just cleptomaniac.

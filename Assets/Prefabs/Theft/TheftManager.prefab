@@ -117,7 +117,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2546343826711321693
 RectTransform:
   m_ObjectHideFlags: 0
@@ -258,6 +258,7 @@ MonoBehaviour:
   overlay: {fileID: 2546343826711321690}
   playerKilledNotification: {fileID: 0}
   playerWonNotification: {fileID: 2546343826912876722}
+  playerWonNotificationText: {fileID: 2546343827285014567}
   waitUntilFadeout: 3
   levelContainer: {fileID: 0}
   dateUi: {fileID: 0}

@@ -46,10 +46,10 @@ public class FadeInOut : PersistentSingletonMonoBehaviour<FadeInOut>
         var startColor = new Color(color.r, color.g, color.b, startAlpha);
         var endColor = new Color(color.r, color.g, color.b, endAlpha);
 
-        var startTime = Time.time;
-        while (Time.time < startTime + fadeTimeSeconds)
+        var startTime = Time.realtimeSinceStartup;
+        while (Time.realtimeSinceStartup < startTime + fadeTimeSeconds)
         {
-            overlay.color = Color.Lerp(startColor, endColor, (Time.time - startTime) / fadeTimeSeconds);
+            overlay.color = Color.Lerp(startColor, endColor, (Time.realtimeSinceStartup - startTime) / fadeTimeSeconds);
             yield return 0;
         }
 

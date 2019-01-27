@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityUtilities;
 
 namespace Platformer
@@ -9,9 +10,12 @@ namespace Platformer
     {
         [SerializeField] GameObject overlay;
         [SerializeField] GameObject playerKilledNotification;
+        [SerializeField] Text playerKilledNotificationText;
         [SerializeField] GameObject playerWonNotification;
         [SerializeField] float waitUntilFadeout = 1f;
         [SerializeField] Transform levelContainer;
+
+        AudioSource audioSource;
 
         public bool Running { get; private set; }
 
@@ -21,6 +25,7 @@ namespace Platformer
             overlay.SetActive(false);
             playerKilledNotification.SetActive(false);
             playerWonNotification.SetActive(false);
+            audioSource = GetComponent<AudioSource>();
         }
 
         void Start()
@@ -34,14 +39,20 @@ namespace Platformer
             level.gameObject.SetActive(true);
         }
         
-        public void KillPlayer()
+        public void KillPlayer(AudioClip sfx, string gameOverMessage)
         {
             if (!Running)
                 return;
 
+            if (sfx != null)
+            {
+                audioSource.PlayOneShot(sfx);
+            }
+
             DataManager.Instance.ChosenPerson.Status = PersonStatus.Failed;
             
             overlay.SetActive(true);
+            playerKilledNotificationText.text = gameOverMessage;
             playerKilledNotification.SetActive(true);
             SwitchToHomeAfterDelay();
         }
@@ -65,11 +76,16 @@ namespace Platformer
 
         IEnumerator SwitchToHomeAfterDelayCoroutine()
         {
+            Time.timeScale = 0;
             Running = false;
             
-            yield return new WaitForSeconds(waitUntilFadeout);
+            yield return new WaitForSecondsRealtime(waitUntilFadeout);
             
-            FadeInOut.Instance.FadeOut(() => SceneManager.LoadScene("Home"));
+            FadeInOut.Instance.FadeOut(() =>
+            {
+                Time.timeScale = 1;
+                SceneManager.LoadScene("Home");
+            });
         }
     }
 }

@@ -46,7 +46,10 @@ public class CharacterSelection : MonoBehaviour
 
     public void Date()
     {
-        FadeInOut.Instance.FadeOut(() => SceneManager.LoadScene("Date"));
+        FadeInOut.Instance.FadeOut(() => 
+            SceneManager.LoadScene(DataManager.Instance.ChosenPerson.Status == PersonStatus.DateSucceeded 
+            ? "Theft" 
+            : "Date"));
     }
 
     public void ToggleInfoOrPhoto()

@@ -15,6 +15,7 @@ public class DiscussionController : MonoBehaviour {
     public Button next;
     public Button goHome;
     public Text lineBeforeTheft;
+    public AudioSource music;
     [SerializeField] string lineBeforeTheftText;
     int currentDialogueNode;
     bool showAnswersNext;
@@ -147,6 +148,7 @@ public class DiscussionController : MonoBehaviour {
     }
     
     void ShowLineBeforeTheft() {
+        StartCoroutine(FadeMusicOut(1));
         lineBeforeTheft.gameObject.SetActive(true);
         lineBeforeTheft.text = lineBeforeTheftText + '\n' + '\n' + ChosenPerson.TheftComment;
         lineBeforeTheft.GetComponent<TextScrolling>().Scroll();
@@ -156,5 +158,15 @@ public class DiscussionController : MonoBehaviour {
     IEnumerator TriggerGoToTheft() {
         yield return new WaitForSeconds(3);
         GoToTheft();
+    }
+
+    IEnumerator FadeMusicOut(float fadeTime) {
+        var startTime = Time.realtimeSinceStartup;
+        while (Time.realtimeSinceStartup < startTime + fadeTime) {
+            music.volume = (Time.realtimeSinceStartup - startTime) / fadeTime;
+            yield return 0;
+        }
+
+        music.volume = 0;
     }
 }

@@ -810,6 +810,7 @@ MonoBehaviour:
   next: {fileID: 836680723}
   goHome: {fileID: 1765423788}
   lineBeforeTheft: {fileID: 1386350565}
+  music: {fileID: 988925969}
   lineBeforeTheftText: You spend the night at their place... They're now asleep.
 --- !u!4 &618586029
 Transform:
@@ -1328,7 +1329,7 @@ GameObject:
   - component: {fileID: 988925970}
   - component: {fileID: 988925969}
   m_Layer: 0
-  m_Name: Swipe Theft - Cafe Music_1
+  m_Name: Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1344,7 +1345,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4d61fb3348488ff43b2e16fdae22b38e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7b48fd4492f0c4b87a1c8b5c0983a455, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1707,12 +1708,12 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 2574, y: 1362}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1776,7 +1777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1386350564
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1791,10 +1792,10 @@ RectTransform:
   m_Father: {fileID: 1305002152}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.2, y: 61.8}
-  m_SizeDelta: {x: 667.2, y: 208.3}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 128.69995}
+  m_SizeDelta: {x: -645.9, y: -614.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1386350565
 MonoBehaviour:
@@ -1820,16 +1821,16 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 25
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 2
-    m_MaxSize: 40
+    m_MaxSize: 100
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &1386350566
 CanvasRenderer:
   m_ObjectHideFlags: 0

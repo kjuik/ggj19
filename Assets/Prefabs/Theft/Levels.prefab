@@ -16992,7 +16992,7 @@ PrefabInstance:
     - target: {fileID: 4438144355437579033, guid: cf01ee86068bff64d84e7d42125a7ab0,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.08
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4438144355437579033, guid: cf01ee86068bff64d84e7d42125a7ab0,
         type: 3}
@@ -17022,7 +17022,7 @@ PrefabInstance:
     - target: {fileID: 3117247022357862028, guid: cf01ee86068bff64d84e7d42125a7ab0,
         type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 0.08
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3117247022357862028, guid: cf01ee86068bff64d84e7d42125a7ab0,
         type: 3}

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections;
-
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityUtilities;
@@ -49,11 +49,16 @@ public class FadeInOut : PersistentSingletonMonoBehaviour<FadeInOut>
         var startTime = Time.realtimeSinceStartup;
         while (Time.realtimeSinceStartup < startTime + fadeTimeSeconds)
         {
-            overlay.color = Color.Lerp(startColor, endColor, (Time.realtimeSinceStartup - startTime) / fadeTimeSeconds);
+            var currValue = (Time.realtimeSinceStartup - startTime) / fadeTimeSeconds;
+
+            overlay.color = Color.Lerp(startColor, endColor, currValue);
+            AudioListener.volume = Mathf.Lerp(endAlpha, startAlpha, currValue); //much hack
+
             yield return 0;
         }
 
         overlay.color = endColor;
+        AudioListener.volume = startAlpha;
 
         onFinished?.Invoke();
     }

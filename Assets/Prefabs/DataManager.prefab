@@ -49,5 +49,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 38273a87544f59346b06d47f018ee779, type: 2}
   - {fileID: 11400000, guid: 8dfe329e4795b5647ac9d2f6a001193e, type: 2}
   - {fileID: 11400000, guid: c9e1483e42e43934bb8845732ab70a2f, type: 2}
-  defaultPerson: {fileID: 11400000, guid: e02f0ab56d3e59841b4c7849761e4dbe, type: 2}
+  defaultPerson: {fileID: 11400000, guid: 38273a87544f59346b06d47f018ee779, type: 2}
   SkinColor: {r: 0.79215693, g: 0.45098042, b: 0.2627451, a: 1}

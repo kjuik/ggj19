@@ -189,7 +189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7509681, y: 1.45, z: -20}
+  m_LocalPosition: {x: -0.7519357, y: 1.45, z: -20}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -342,7 +342,7 @@ PrefabInstance:
         type: 3}
       propertyPath: defaultPerson
       value: 
-      objectReference: {fileID: 11400000, guid: 38273a87544f59346b06d47f018ee779,
+      objectReference: {fileID: 11400000, guid: c9e1483e42e43934bb8845732ab70a2f,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a7785270e033d14c8ca6abc2e98ed0e, type: 3}
@@ -543,7 +543,32 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9020163072899417568, guid: 6f22b1bea01f71d41b2683b9354dd2da,
+        type: 3}
+      propertyPath: gameOverMessage
+      value: You ran into one of last night's party guests! The noise wakes up Karen,
+        who kicks you out immediately.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668130446878311830, guid: 6f22b1bea01f71d41b2683b9354dd2da,
+        type: 3}
+      propertyPath: gameOverMessage
+      value: You ran into one of last night's party guests! The noise wakes up Karen,
+        who kicks you out immediately.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816898044612526040, guid: 6f22b1bea01f71d41b2683b9354dd2da,
+        type: 3}
+      propertyPath: gameOverMessage
+      value: You ran into one of last night's party guests! The noise wakes up Karen,
+        who kicks you out immediately.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5451828307148631236, guid: 6f22b1bea01f71d41b2683b9354dd2da,
+        type: 3}
+      propertyPath: gameOverMessage
+      value: You ran into one of last night's party guests! The noise wakes up Karen,
+        who kicks you out immediately.
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6975906334540815581, guid: 6f22b1bea01f71d41b2683b9354dd2da, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6f22b1bea01f71d41b2683b9354dd2da, type: 3}
 --- !u!1001 &1032663746548136222
 PrefabInstance:
@@ -735,7 +760,7 @@ PrefabInstance:
     - target: {fileID: 3362249548071487090, guid: 6f1651e5f9ce1c14980a08b37c2eaf42,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.7509681
+      value: -0.7519357
       objectReference: {fileID: 0}
     - target: {fileID: 3362249548071487090, guid: 6f1651e5f9ce1c14980a08b37c2eaf42,
         type: 3}

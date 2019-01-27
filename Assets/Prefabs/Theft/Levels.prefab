@@ -4956,6 +4956,12 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 602481628180421868, guid: 32f87eecc074f054294fa2793d9fb603,
+        type: 3}
+      propertyPath: gameOverMessage
+      value: You hit one of Maze's fabulous disco balls! He wakes up and kicks you
+        out.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32f87eecc074f054294fa2793d9fb603, type: 3}
 --- !u!4 &8044425401712998700 stripped

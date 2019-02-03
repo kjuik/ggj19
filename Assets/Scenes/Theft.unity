@@ -608,7 +608,7 @@ PrefabInstance:
         type: 3}
       propertyPath: defaultPerson
       value: 
-      objectReference: {fileID: 11400000, guid: 8dfe329e4795b5647ac9d2f6a001193e,
+      objectReference: {fileID: 11400000, guid: e02f0ab56d3e59841b4c7849761e4dbe,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a7785270e033d14c8ca6abc2e98ed0e, type: 3}
@@ -873,6 +873,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 904143626769503882, guid: 6f22b1bea01f71d41b2683b9354dd2da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 904143627133374819, guid: 6f22b1bea01f71d41b2683b9354dd2da,
         type: 3}
